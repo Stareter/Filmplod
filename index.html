@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="_HUZ8VMJslEe_1o4O5ojncEgh7JgLo5Tz_iWKVbuH26bLWykF0z4ZCnLbQtDzG_kj0736lJq5ACGgcJnDJ5XWQ==">
+    <title>Convertir des fichiers Word et PDF en HTML | Éditeur HTML en ligne gratuit</title>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Collez votre texte ou téléchargez et convertissez vos documents Word, PDF et autres en HTML propre.">
+    <meta property="og:title" content="Convertir des fichiers Word et PDF en HTML | Éditeur HTML en ligne gratuit">
+    <meta property="og:description" content="Collez votre texte ou téléchargez et convertissez vos documents Word, PDF et autres en HTML propre.">
+            <meta property="og:image" content="https://wordtohtml.net/images/word-to-html-sharing-image-2020.png">
+        <meta property="og:url" content="https://wordtohtml.net">
+        <meta property="og:image:alt" content="Convertir des fichiers Word et PDF en HTML | Éditeur HTML en ligne gratuit">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="1574568395928423">
+
+    <meta name="twitter:title" content="Convertir des fichiers Word et PDF en HTML | Éditeur HTML en ligne gratuit">
+    <meta name="twitter:description" content="Collez votre texte ou téléchargez et convertissez vos documents Word, PDF et autres en HTML propre.">
+    <meta name="twitter:image" content="https://wordtohtml.net/images/word-to-html-sharing-image-2020.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link href="/js/codemirror560/lib/codemirror.css?v=1616242348" rel="stylesheet">
+<link href="/js/codemirror560/addon/fold/foldgutter.css?v=1616242348" rel="stylesheet">
+<link href="/js/codemirror560/addon/hint/show-hint.css?v=1616242348" rel="stylesheet">
+<link href="/js/codemirror560/addon/display/fullscreen.css?v=1616242348" rel="stylesheet">
+<link href="/js/codemirror560/theme/duotone-dark.css?v=1616242348" rel="stylesheet">
+<link href="/js/codemirror560/addon/dialog/dialog.css?v=1616242348" rel="stylesheet">
+<link href="/js/codemirror560/addon/search/matchesonscrollbar.css?v=1616242348" rel="stylesheet">
+<link href="/js/iguider/iGuider.css?v=1628679296" rel="stylesheet">
+<link href="/js/iguider/themes/material/iGuider-theme-material.css?v=1545064252" rel="stylesheet">
+<link href="/css/titatoggle-dist-min.css?v=1518631870" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" rel="stylesheet">
+<link href="/assets/c4701eb0/css/bootstrap.min.css?v=1645530267" rel="stylesheet">
+<link href="/assets/2c28f596/css/select2.min.css?v=1645530267" rel="stylesheet">
+<link href="/assets/3c4bf0e3/css/select2-addl.min.css?v=1645530267" rel="stylesheet">
+<link href="/assets/3c4bf0e3/css/select2-krajee.min.css?v=1645530267" rel="stylesheet">
+<link href="/assets/94f2e17/css/kv-widgets.min.css?v=1645530267" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/froala-editor@4.0.10/css/froala_editor.pkgd.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/froala-editor@4.0.10/css/themes/dark.min.css" rel="stylesheet">
+<link href="/assets/9a2e4632/authchoice.css?v=1645530267" rel="stylesheet">
+<link href="/assets/bf92f2b/css/strength-meter.min.css?v=1645530267" rel="stylesheet">
+<link href="/assets/ce772b08/css/bootstrap-slider.min.css?v=1645530267" rel="stylesheet">
+<link href="/css/site.css?v=1649228084" rel="stylesheet">
+<script>var s2options_d6851687 = {"themeCss":".select2-container--krajee","sizeCss":"","doReset":true,"doToggle":false,"doOrder":false};
+window.select2_8e0bee46 = {"theme":"krajee","width":"100%","placeholder":"Ouvrir un document enregistré","language":"fr"};
+
+var language ='fr';
+const WTH_DOMAIN = "https://wordtohtml.net"; 
+var isP = false; var isBusinessUser = false;
+var isR = false; 
+var gup = []; 
+var mdgupc = 20; 
+var onlyShowVisualEditorMode = false;
+var isT = false;
+var settings = JSON.parse('{"editorType":2,"fullPageHtml":false,"gotoHtmlElement":true,"entityEncoding":"named","legacyHtml":false,"autoLink":true,"keepAllStyles":true,"pasteMode":3,"compactToolbar":true,"editorHeight":400,"fontSizeUnit":"px","autoCloseTags":true,"showLineNumbers":true,"lineWrappig":true,"codeFolding":true,"customFontUrls":"","customFontNames":"","customCss":"","copyToClipboardAfterCleanup":true,"theme":1,"autoSaveHTML":true,"autoSaveConvertedDoc":false,"showCleanupOptions":false}');
+var customCSSObject = null;
+window.strength_40879144 = {"language":"fr","inputTemplate":"\u003Cdiv class=\u0022input-group\u0022\u003E{input}\u003Cspan class=\u0022input-group-addon\u0022\u003E{toggle}\u003C\/span\u003E\u003C\/div\u003E"};
+
+window.slider_81d74f9b = {"min":-40,"max":40,"step":1,"tooltip":"show","value":3,"id":"textShadowRight-slider"};
+
+window.slider_396210aa = {"min":-40,"max":40,"step":1,"tooltip":"show","value":3,"id":"textShadowDown-slider"};
+
+window.slider_917ed298 = {"min":0,"max":20,"step":1,"tooltip":"show","value":2,"id":"textShadowBlur-slider"};
+
+window.slider_b3e59206 = {"min":0,"max":1,"step":0.05,"tooltip":"show","value":0.8,"id":"textShadowOpacity-slider"};
+</script>
+    <script src="https://js.stripe.com/v3/"></script> 
+
+    <!-- Matomo -->
+    <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['HeatmapSessionRecording.disable']);      
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://matomo.wordtohtml.net/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+    </script>
+    <!-- End Matomo Code -->
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-184627-39', {'siteSpeedSampleRate': 50});
+      ga('require', 'GTM-NQN96CM');
+ 
+    
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q51SNTKFWF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q51SNTKFWF');
+    </script>    
+
+    
+    
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="headerBar" class="navbar navbar-inverse navbar"><div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerBar-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img src="/images/word-to-html-logo.svg" style="width: 250px; height: 46px;" alt="WTH logo" /></a></div><div id="headerBar-collapse" class="collapse navbar-collapse"><ul id="w1" class="navbar-nav navbar-right nav"><li class="active"><a href="/fr/site/index"><i class="fa fa-code" aria-hidden="true"></i> Éditeur HTML</a></li>
+<li><a href="/fr/html-editor-online"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Éditeur visuel</a></li>
+<li><a class="emailEditorItem" href="/fr/email/designer"><i class="fa fa-envelope" aria-hidden="true"></i> Créateur d'email</a></li>
+<li><a href="/fr/site/pricing">Tarifs</a></li>
+<li><a href="/fr/site/api">API</a></li>
+<li class="dropdown"><a id="helpMenu" class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-question" aria-hidden="true"></i> Aide <span class="caret"></span></a><ul id="w2" class="dropdown-menu"><li><a href="https://wordtohtml.net/content/category/news/" tabindex="-1">Actualités</a></li>
+<li><a href="https://wordtohtml.net/content/knowledge-base/" tabindex="-1">Base de connaissances</a></li>
+<li><a href="/fr/site/contact" tabindex="-1">Contactez</a></li></ul></li>
+<li class="dropdown"><a id="languagesMenu" class="dropdown-toggle" href="/fr/site/#" data-toggle="dropdown"><span class="flag-icon flag-icon-fr"></span> Français <span class="caret"></span></a><ul id="w3" class="dropdown-menu"><li><a id="languagesMenu" href="/en/site/index" tabindex="-1"><span class="flag-icon flag-icon-us"></span> English</a></li>
+<li><a id="languagesMenu" href="/de/site/index" tabindex="-1"><span class="flag-icon flag-icon-de"></span> Deutsch</a></li>
+<li><a id="languagesMenu" href="/pl/site/index" tabindex="-1"><span class="flag-icon flag-icon-pl"></span> Polski</a></li>
+<li><a id="languagesMenu" href="/es/site/index" tabindex="-1"><span class="flag-icon flag-icon-es"></span> Español</a></li></ul></li>
+<li><a id="loginMenuItem" class="btn" href="/fr/site/login">Connexion</a></li>
+<li><a class="goProTopLink" href="/fr/site/javascript:void(0);" onclick="js: registerPopup(&quot;Top Button&quot;); return false;">S&#039;abonner à</a></li></ul></div></div></nav>
+    <div id="loading" style="display: none;">
+        <img data-src="/images/ajax-loader.gif" src="data:," width="256" height="256" alt="loading" loading="lazy" class="lazyload" />
+    </div>
+
+    <div id="mainContent" class="container-fluid">
+
+        <div id="alerts">
+                    </div>
+
+        
+
+    <div id="topInfo" class="row">
+        <div class="col-lg-12  text-center">
+            <h1>
+                Le moyen le plus simple de convertir instantanément votre texte en un HTML parfait            </h1>            
+            <p>                       
+                Vous en avez assez du temps et des tracas li&eacute;s &agrave; la mise en forme des textes pour le Web ? Notre service vous permet de convertir votre texte en HTML correct instantan&eacute;ment.<br>Notre service de base est gratuit, mais passez en mode PRO si vous avez besoin de fonctionnalit&eacute;s suppl&eacute;mentaires comme la conversion de documents Word ou PDF. 
+                <a href="#homeWTHInfo">Découvrez notre version PRO...</a>
+            </p>       
+        </div>        
+    </div>
+      
+
+<div id="editorsWrapper" class="defaultEditor">
+
+    <div class="row">
+
+        <div id="visualEditor" class="col-lg-6">
+
+            <div id="visualEditorTitleRow">
+                <h3>Éditeur visuel</h3>
+                <div id="sharedDocUserInfo" data-toggle="tooltip" data-placement="bottom" title="Modifier le même document en même temps n'est pas autorisé. Tu dois attendre que l'utilisateur actuel arrête d'éditer ce document ou faire ta propre copie de ce document et ensuite apporter des modifications."></div>
+                <div>     
+
+                    <div id="editorSwitch" class="checkbox checkbox-slider--b-flat" style="display: inline-block">
+                        <label for="editorMode" class="pro" data-toggle="tooltip" data-placement="bottom" 
+                            title="Passer à l'éditeur TinyMCE">
+                            <input id="editorMode" name="editorMode" type="checkbox" checked onchange="switchEditors()" />
+                            <span><i class="fa fa-pencil-square-o"></i></span>
+                        </label>
+                    </div>                       
+
+                    <div id="editorToolbarModeOption" class="checkbox checkbox-slider--b-flat" style="display: inline-block">
+                        <label for="editorToolbarMode" class="pro" data-toggle="tooltip" data-placement="bottom" title="Changer le mode de la barre d'outils (compacte ou complète)">
+                            <input id="editorToolbarMode" name="editorToolbarMode" type="checkbox" onchange="switchFroalaToolbarMode()" />
+                            <span><i class="fa fa-sliders"></i></span>
+                        </label>
+                    </div>                    
+                    
+                    <div id="amazonEditorModeOption" class="checkbox checkbox-slider--b-flat" style="display: inline-block">
+                        <label for="amazonEditorMode" class="pro" data-toggle="tooltip" data-placement="bottom" title="Mode spécial de l'Éditeur Visuel uniquement pour les descriptions de produits Amazon (seules les balises HTML de base sont autorisées)">
+                            <input id="amazonEditorMode" name="amazonEditorMode" type="checkbox" 
+                            onchange="registerPopup('Passez à PRO pour créer et modifier des descriptions de listings Amazon', '/help/amazon_mode.png'); $(this).prop('checked', false);" />
+                            <span><i class="fa fa-amazon"></i></span>
+                        </label>
+                    </div>  
+                    
+                    <div id="visualEditorModeOption" class="checkbox checkbox-slider--b-flat" style="display: inline-block">
+                        <label for="visualEditorMode" data-toggle="tooltip" data-placement="bottom" title="Afficher ou masquer l'éditeur de code">
+                            <input id="visualEditorMode" name="visualEditorMode" type="checkbox" checked                            onchange="switchVisualToHTMLEditor()" /> <span><i class="fa fa-code"></i></span>
+                        </label>
+                    </div>                     
+
+                </div>
+            </div>
+
+            <textarea id="pastedContent" class="pastedContent" name="pastedContent" style="width:100%; height: 481px"></textarea>
+            <span id="errorVisualEditor"></span>
+            <span id="editorMobileInfo">Pour une meilleure expérience, utilisez notre site sur un bureau</span>
+
+            <div id="docRow" class="row proBg">
+                <div class="col-lg-12">
+
+                    <div id="docNameWrapper" class="dropdown pro">
+                        <div class="kv-plugin-loading loading-document">&nbsp;</div><select id="document" class="form-control" name="document" data-s2-options="s2options_d6851687" data-krajee-select2="select2_8e0bee46" style="width: 1px; height: 1px; visibility: hidden;">
+<option value="">Ouvrir un document enregistré</option>
+</select>                    </div>
+
+                    <!-- Split button -->
+                    <div class="btn-group saveButton">
+                      <button id="docSaveButton" type="button" class="btn btn-primary" data-toggle="tooltip" title="Enregistrez votre HTML en ligne"
+                              onclick="registerPopup('L'enregistrement des fichiers est une fonction Pro', '/help/save-documents.gif')">
+                        <i class="fa fa-floppy-o"></i> Enregistrer                      </button>
+                      <button id="docSaveMenuButton" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Liste déroulante</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a id="downloadOnlyHTMLButton" href="javascript:void(0)" onclick="registerPopup()"
+                               class="wthTip" data-toggle="tooltip" title="Télécharger un fichier contenant uniquement du html">Télécharger uniquement du HTML</a></li>
+                        <li><a id="downloadHTMLButton" href="javascript:void(0)" onclick="registerPopup()"
+                               class="wthTip" data-toggle="tooltip" title="Télécharger le fichier html (si aucun média n'est trouvé) ou le fichier zip contenant le fichier html et toutes les images">Télécharger le HTML avec les médias</a></li>
+                        <li><a id="downloadDocxButton" href="javascript:void(0)" onclick="registerPopup()">Télécharger en DOCX</a></li>
+                        <li><a id="downloadPdfButton" href="javascript:void(0)" onclick="registerPopup()">Télécharger en PDF</a></li>
+                        <li><a id="downloadEpubButton" href="javascript:void(0)" onclick="registerPopup()">Télécharger en EPUB (ebook)</a></li>
+                        <li><a id="saveDocAsButton" href="javascript:void(0)" onclick="registerPopup()">Enregistrer sous</a></li>
+                        <li><a id="renameDocButton" href="javascript:void(0)" onclick="registerPopup()">Renommer</a></li>
+                        <li><a id="duplicateDocButton" href="javascript:void(0)" onclick="registerPopup()">Dupliquer</a></li>
+                        <li><a id="shareDocumentButton" href="javascript:void(0)" onclick="registerPopup()">Partager</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a id="newDocButton" href="javascript:void(0)" onclick="newDocument()">Nouveau document</a></li>
+                        <li><a id="deleteDocButton" href="javascript:void(0)" onclick="registerPopup()">Supprimer</a></li>
+                        <li role="separator" class="divider"></li>                        
+                        <li><a id="manageConvertedMiediaFilesButton" href="/site/manage-converted-docs-folders" target="_blank">Gérer les dossiers de documents convertis</a></li>
+                        <li><a id="manageCustomFilesButton" href="/site/manage-custom-files" target="_blank">Gérer les fichiers téléchargés personnalisés</a></li>
+                      </ul>
+                    </div>
+
+                    <button id="emailButton" type="button" class="btn btn-default" data-toggle="tooltip" title="Envoyez le HTML de l'éditeur par e-mail. Si vous travaillez sur un courriel HTML, vous pouvez envoyer un courriel de test pour voir à quoi il ressemblera."
+                            onclick="registerPopup('L'envoi d'e-mails est une fonction Pro', '/help/send_email.jpg')">
+                        <i class="fa fa-lg fa-envelope-o"></i>                    </button>
+
+                    <button id="previewDocButton" type="button" class="btn btn-default" data-toggle="tooltip" title="Prévisualisation du document enregistré dans un nouvel onglet."
+                            onclick="registerPopup()">
+                        <i class="fa fa-lg fa-eye"></i>                    </button>                 
+
+                    <button id="previewResposiveDocButton" type="button" class="btn btn-default" data-toggle="tooltip" title="Prévisualisation du document enregistré en mode réactif (mobile, tablette, ordinateur portable)."
+                            onclick="registerPopup()">
+                        <i class="fa fa-lg fa-mobile"></i>                    </button>       
+                    
+                    <button id="copyToClipboardButton" class="btn btn-primary pull-right" data-toggle="tooltip" style="display: none"
+                        title="Copie tout le code HTML de l'éditeur dans le presse-papiers (pas besoin de sélectionner tout le code). Si tu ne veux copier qu'une section, mets d'abord cette section en surbrillance.">
+                        <i class="fa fa-clipboard"></i> Copier dans le presse-papiers                    </button>
+
+                </div>
+
+            </div>
+
+            <div id="leftEditorBigger" style="">
+                <a href="#" class="wthTip pro" onclick="registerPopup('Le redimensionnement des fenêtres de l'éditeur est une fonctionnalité Pro', '/help/resize-editor-widows.gif')" data-toggle="tooltip" title="Rendre l'éditeur visuel plus petit">
+                        <i class="fa fa-lg fa-chevron-left"></i>                </a>
+            </div>
+
+            <div id="rightEditorBigger" style="">
+                <a href="#" class="wthTip pro" onclick="registerPopup('Le redimensionnement des fenêtres de l'éditeur est une fonctionnalité Pro', '/help/resize-editor-widows.gif')" data-toggle="tooltip" title="Rendre l'éditeur de code HTML plus petit">
+                        <i class="fa fa-lg fa-chevron-right"></i>                </a>
+            </div>
+
+        </div>
+
+        <div id="code" class="col-lg-6" style="">
+
+            <div id="codeEditorTitleRow">
+                <h3>Éditeur HTML</h3>
+
+                <div id="rating">
+                    <span>Longueur du code :</span> <span id="htmlLength" title="Longueur du code HTML">0</span>
+                </div>
+            </div>
+
+            <div id="htmlEditorButtons" class="lightHtmlEditorToolbar proBg">
+
+                <button id="findButton" class="btn btn-nobg" data-toggle="tooltip" title="Trouver dans l'éditeur de code HTML"><i class="fa fa-lg fa-search"></i></button>
+                <button id="findAndReplaceButton" class="btn btn-nobg" data-toggle="tooltip" title="Recherche et remplacement dans l'éditeur de code HTML"><i class="fa fa-lg fa-search-minus"></i></button>
+                <button id="addToFindButton" class="btn btn-nobg" data-toggle="tooltip" title="Ajouter le HTML ou la balise sélectionnée au modèle rechercher et remplacer"><i class="fa fa-lg fa-search-plus"></i></button>
+                <button id="addToDeleteButton" class="btn btn-nobg" data-toggle="tooltip" title="Ajouter le HTML ou le tag sélectionné au modèle rechercher et supprimer"><i class="fa fa-lg fa-eraser"></i></button>
+                <button id="undoCMButton" class="btn btn-nobg" data-toggle="tooltip" title="Annuler"><i class="fa fa-lg fa-undo"></i></button>
+                <button id="redoCMButton" class="btn btn-nobg" data-toggle="tooltip" title="Refaire"><i class="fa fa-lg fa-repeat"></i></button>
+                <button id="showAllCMButton" class="btn btn-nobg" data-toggle="tooltip" title="Afficher tous les caractères blancs dans l'éditeur de code"><i class="fa fa-lg fa-eye"></i></button>
+                <button id="fullscreeenCMButton" class="btn btn-nobg" data-toggle="tooltip" title="Appuyez sur F11 dans l'éditeur de code pour passer en mode plein écran ou sur Echap pour revenir à l'affichage normal">
+                    <i class="fa fa-lg fa-arrows-alt"></i></span>
+                </button>
+                <button id="indentButton" class="btn btn-nobg" data-toggle="tooltip" title="Embellir le code HTML"><i class="fa fa-lg fa-indent"></i></button>
+                <button id="compressButton" class="btn btn-nobg" data-toggle="tooltip" title="Compresser le code HTML"><i class="fa fa-lg fa-compress"></i></button>
+                <button id="codeEditorFontSmallerButton" class="btn btn-nobg" data-toggle="tooltip" title="Cliquez pour réduire la taille de la police de l'éditeur de code"><i class="fa fa-font"></i></button>
+                <button id="codeEditorFontBiggerButton" class="btn btn-nobg" data-toggle="tooltip" title="Cliquez pour agrandir la police de l'éditeur de code"><i class="fa fa-lg fa-font"></i></button>
+
+                <div id="darkThemeOption" class="checkbox checkbox-slider--b-flat">
+                <label for="htmlEditorTheme" class="pro" data-toggle="tooltip" title="Activer le thème sombre de l'éditeur">
+                    <input id="htmlEditorTheme" name="htmlEditorTheme" type="checkbox" onchange="registerPopup()" />
+                    <span> <i class="fa fa-lg fa-moon-o"></i></span>
+                </label>
+                </div>
+
+            </div>
+
+            <textarea id="htmlOutput" name="htmlOutput" style="width:100%; height: 430px" placeholder="Collez ou saisissez votre HTML ici. Pour coller sur Windows, appuyez sur Ctrl + V ou cliquez avec le bouton droit de la souris et sélectionnez coller. Pour coller sur un Mac, appuyez sur Pomme + V ou cliquez avec le bouton droit de la souris et sélectionnez coller."></textarea>
+
+            <div id="htmlEditorBelow" class="row"> 
+
+                <div class="col-md-8">
+                    <button id="copyCMButton" class="btn btn-primary" data-toggle="tooltip" title="Copie tout le code HTML de l'éditeur dans le presse-papiers (pas besoin de sélectionner tout le code). Si tu ne veux copier qu'une section, mets d'abord cette section en surbrillance."><i class="fa fa-clipboard"></i> Copier dans le presse-papiers</button>
+                    <button id="cleanupButton" type="button" class="btn btn-success" 
+                        onclick="registerPopup('Le nettoyage HTML est une fonctionnalité Pro', '/help/cleanup_fr.gif')" data-toggle="tooltip"
+                        title="Pour traiter du HTML, sélectionne d'abord certaines options de nettoyage (styles, classes, etc.), ajoute tes propres entrées de recherche et de remplacement ou du code JavaScript personnalisé. Si les options de nettoyage sont cachées, clique sur l'icône de l'engrenage sur le côté droit pour voir toutes les options de nettoyage. Si tu n'aimes pas la façon dont le nettoyage a affecté ton code HTML, tu peux cliquer sur le bouton Annuler en haut de l'Éditeur HTML pour le rétablir tel qu'il était, puis tu peux essayer d'autres options de nettoyage.">
+                                <i class="fa fa-lg fa-gears"></i> Nettoyer HTML                    </button>
+                    <button id="templateOptionsButton" onclick="js: showOrHideTemplateCleanupOptions()" class="btn btn-default" data-toggle="tooltip" title="Options de nettoyage HTML"><i class="fa fa-lg fa-gear"></i></button>
+                    
+                    <span id="amazonAdvancedOptions" style="display: none">
+                        <button id="showCleanupOptionsAmazonButton" onclick="js: showAmazonModeAdvancedSetions()" class="btn btn-default" data-toggle="tooltip" title="Afficher les options de nettoyage avancées...">
+                            <i class="fa fa-lg fa-gear"></i>                        </button>
+                    </span>                    
+
+                </div>
+
+                                <div class="col-md-4 dcpAds">
+                    <div class="row">
+                        <div class="col-xs-12">                                                            
+                            <a href="javascript:void(0)" onclick="js: $('#dcpModal').modal('show'); trackEvent('DCP Popup', 'shown'); return false;" data-toggle="tooltip" title="Convertissez vos fichiers par lots en 1 seul endroit">
+                                Convertisseur Windows Desktop <i class="fa fa-windows" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)" onclick="js: $('#dcpoModal').modal('show'); trackEvent('DCPO Popup', 'shown'); return false;" data-toggle="tooltip" title="Conversion par lots depuis n'importe quel navigateur">
+                                Convertisseur en ligne + API <i class="fa fa-cloud" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+    </div>
+
+        
+    <div class="fluidPadding">
+
+        
+<div id="cleanupTabs" style="display: none">
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#cleanupTab" aria-controls="cleanupTab" role="tab" data-toggle="tab">Options de nettoyage HTML</a></li>
+    <li role="presentation"><a href="#findReplaceTab" aria-controls="findReplaceTab" role="tab" data-toggle="tab">Trouver et remplacer</a></li>
+    <li role="presentation"><a href="#tagAttributesTab" aria-controls="tagAttributesTab" role="tab" data-toggle="tab">Gérer les balises et les attributs</a></li>
+    <li role="presentation"><a href="#customJSTab" aria-controls="customJSTab" role="tab" data-toggle="tab" onclick="customJSTab()">JavaScript personnalisé</a></li>
+</ul>
+
+<div class="cleanupOptions tab-content top5">
+
+    <div id="cleanupTab" role="tabpanel" class="tab-pane active">
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label class="tt" data-toggle="tooltip" title="Supprime tous les attributs de style et les balises &lt;style&gt; sont supprim&eacute;es (notez que les fonctionnalit&eacute;s permettant de conserver ou de supprimer les styles css ne fonctionneront pas si vous activez cette option)">
+                    <input id="removeFormatting" type="checkbox" onchange="updateCssStylesFields()"><span> styles</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les attributs class de toutes les balises">
+                        <input id="removeClasses" type="checkbox" onchange="updateCssClassFields()"><span> classes</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime toutes les <span...>balises<span>..</span></span...>., conserve le HTML interne">
+                    <input id="removeSpanTags" type="checkbox"><span> balises span</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime toutes les <p...>balises<p>..</p></p...>., conserve le HTML interne">
+                    <input id="removePTags" type="checkbox"><span> tags p</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les <img...>tags</img...> " >
+                    <input id="removeImages" type="checkbox"><span> images</span></label>
+                </div>                  
+            </div>
+            <div class="col-md-3">
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime toutes les balises sans texte interne ou HTML">
+                    <input id="removeAnyEmptyTag" type="checkbox"><span> balises vides</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les tags avec un nombre quelconque de caractères blancs ou &amp;nbsp ;">
+                        <input id="removeTagsWithWhitespace" type="checkbox"><span> Balises avec espaces</span></label>
+                </div>                        
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les attributs des balises, par exemple : <p id='x' class='abc'>xxx</p> sera juste <p>xxx</p>. N'utilisez pas cette option si votre HTML comporte des liens ou des images (les attributs href et src seront également supprimés).">
+                    <input id="removeAllTagAttributes" type="checkbox" onchange="js: if ( $(this).is(':checked') ) { $('#removeEmptyAttributes').prop('checked', false).change(); $('#removeDataAttributes').prop('checked', false).change(); } " ><span> tous les attributs des balises</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les attributs vides ou avec des espaces, comme id=&quot;&quot; ou class=&quot;&quot;.">
+                    <input id="removeEmptyAttributes" type="checkbox"><span> attributs vides</span></label>
+                </div>                             
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime toutes les données... attributs du HTML" >
+                    <input id="removeDataAttributes" type="checkbox"><span> attributs de données</span></label>
+                </div>                                                
+            </div>
+            <div class="col-md-3">
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les <a...>tags</a...> ">
+                    <input id="removeLinks" type="checkbox"><span> liens</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les <table...>tags</table...> ">
+                    <input id="removeTables" type="checkbox"><span> tableaux</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les <form...>tags</form...> ">
+                    <input id="removeForms" type="checkbox"><span> formulaires</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les commentaires HTML <!--...--->">
+                    <input id="removeComments" type="checkbox"><span> commentaires</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Alinéa (joli format) HTML à la fin du nettoyage">
+                    <input id="indentHTML" type="checkbox" onchange="js: if ( $(this).is(':checked') && $('#compressHTML').is(':checked') ) $('#compressHTML').prop('checked', false).change(); "><span> Alinéa</span></label>
+                </div>                        
+            </div>
+            <div class="col-md-3">
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les <script...>tags</script...> ">
+                    <input id="removeScripts" type="checkbox"><span> scripts de code js</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les <iframe...>tags</iframe...> ">
+                    <input id="removeIframes" type="checkbox"><span> iframes</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime plusieurs nouvelles lignes et les lignes comportant uniquement des espaces ou des tabulations">
+                    <input id="removeEmptyLines" type="checkbox"><span> Vider les nouvelles lignes</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Supprime tous les attributs d'identification des balises">
+                    <input id="removeIds" type="checkbox"><span> ID des tags</span></label>
+                </div>
+                <div class="optionRow checkbox checkbox-slider--b-flat">
+                    <label data-toggle="tooltip" title="Compresser le HTML à la fin du nettoyage">
+                    <input id="compressHTML" type="checkbox" onchange="js: if ( $(this).is(':checked') && $('#indentHTML').is(':checked') ) $('#indentHTML').prop('checked', false).change(); "><span> compresser</span></label>
+                </div>                         
+            </div>
+        </div>
+
+        <div class="row top10">
+            <div class="col-lg-6">
+                <textarea id="cssToKeep" rows="1" class="wthTip fullWidthOneRow pro" placeholder="Les styles CSS à conserver (séparés par une virgule)"
+                          data-toggle="tooltip" title="Veuillez entrer les styles CSS comme la couleur, la largeur, la taille de la police ou la couleur : #ffffff, taille de la police : 12px à conserver - tous les autres styles seront supprimés de l'attribut de style HTML"
+                     onclick="registerPopup()" readonly  ></textarea>
+            </div>
+            <div class="col-lg-6">
+                <textarea id="cssToRemove" rows="1" class="fullWidthOneRow  pro" placeholder="Styles CSS à supprimer (séparer par une virgule)"  
+                    data-toggle="tooltip" title="Les styles CSS à supprimer comme la couleur, la largeur, la taille de la police ou la couleur : #ffffff, taille de la police : 12px (séparer par une virgule)"
+                    onclick="registerPopup()" readonly></textarea>
+            </div>
+        </div>
+
+        <div class="row top10">
+            <div class="col-lg-6">
+                <textarea id="cssClassesToKeep" rows="1" class="wthTip fullWidthOneRow pro" placeholder="Classes CSS à conserver (séparées par une virgule)"
+                          data-toggle="tooltip" title="Veuillez entrer les classes CSS à conserver - toutes les classes non spécifiées seront supprimées de l'attribut de classe HTML (vous pouvez aussi utiliser des expressions régulières)"
+                     onclick="registerPopup()" readonly  ></textarea>
+            </div>
+            <div class="col-lg-6">
+                <textarea id="cssClassesToRemove" rows="1" class="wthTip fullWidthOneRow  pro" placeholder="Classes CSS à supprimer (séparer par une virgule)" data-toggle="tooltip"
+                    title="Veuillez entrer les classes CSS à supprimer de l'attribut de classe HTML (vous pouvez aussi utiliser des expressions régulières)" onclick="registerPopup()" readonly></textarea>
+            </div>
+        </div>                
+
+        <div class="row">
+            <div class="col-lg-8">
+                <a class="text-info" href="https://wordtohtml.net/content/knowledge-base/using-the-html-cleanup-options/" target="_blank">
+                    <i class="fa fa-question-circle"></i>  Voir la page d'aide pour les options de nettoyage...                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="findReplaceTab" role="tabpanel" class="tab-pane  ">
+
+        <div class="findReplace optionRow">
+            <div class="row">
+                <div class="col-lg-10">
+                    <textarea id="find" class="fullWidthOneRow" rows="1" placeholder="Entrez une chaîne de caractères pour trouver ou une expression régulière sans /.../ les caractères environnants"></textarea>
+                    <textarea id="replace" class="fullWidthOneRow" rows="1" placeholder="Entrez une chaîne de remplacement ou laissez vide pour supprimer les chaînes trouvées"></textarea>
+                </div>
+                <div class="col-lg-2 noleftpadding">
+                    <button id="btnAddFindReplace" class="btn btn-primary btn-block" onclick="addFindReplace()">
+                            <i class="fa fa-plus"></i> Ajouter                    </button>
+                    <button id="btnUpdateFindReplace" class="btn btn-nobg btn-block" onclick="updateFindReplace()" style="display: none">
+                            <i class="fa fa-check"></i> Mise à jour                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <input id="useRegex" type="checkbox" onchange="js: if ( $(this).prop('checked') ) $('#regexFlags').fadeIn(); else $('#regexFlags').fadeOut();  ">
+                    <label for="useRegex" title="Dans le champ de recherche, les regexp doivent être sans /.../ caractères environnants">Utilisez l'expression régulière</label>
+                </div>
+
+                <div id="regexFlags" class="col-lg-3" style="display: none">
+                    <label>Drapeaux Regex : </label>
+                    <div class="btn-group" data-toggle="buttons">
+                      <label id="gFlagLabel" class="btn btn-primary active" title="Correspondance globale - ne vous arrêtez pas après la première correspondance">
+                          <input type="checkbox" name="gFlag" id="gFlag" checked> &nbsp;G&nbsp;
+                      </label>
+                      <label id="iFlagLabel" class="btn btn-primary active" title="Correspondance insensible à la casse">
+                        <input type="checkbox" name="iFlag" id="iFlag" checked> &nbsp;&nbsp;I&nbsp;&nbsp;
+                      </label>
+                      <label id="mFlagLabel" class="btn btn-primary" title="Multi-lignes - faites correspondre chaque ligne séparément">
+                        <input type="checkbox" name="mFlag" id="mFlag"> &nbsp;M&nbsp;
+                      </label>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 pull-right"><a href="https://www.w3schools.com/js/js_regexp.asp" target="_blank" rel="noopener">Apprendre les expressions régulières...</a></div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10">
+                <select id="findReplaceList" multiple ondblclick="editFindReplace()">
+                </select>
+            </div>
+
+            <div class="col-lg-2 noleftpadding">
+                <button id="btnEditFindReplace" class="btn btn-nobg btn-block" onclick="editFindReplace()">
+                            <i class="fa fa-pencil"></i> Modifier                </button>
+                <button id="btnDeleteFindReplace" class="btn btn-nobg btn-block" onclick="deleteFindReplace()">
+                            <i class="fa fa-trash"></i> Supprimer                </button>
+                <button id="btnMoveUpFindReplace" class="btn btn-nobg btn-block" onclick="upFindReplace()">
+                            <i class="fa fa-arrow-up"></i> Déplacer vers le haut                </button>
+                <button id="btnMoveDownFindReplace" class="btn btn-nobg btn-block" onclick="downFindReplace()">
+                            <i class="fa fa-arrow-down"></i> Déplacer vers le bas                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <a class="text-info" href="https://wordtohtml.net/content/knowledge-base/using-find-and-replace/" target="_blank">
+                    <i class="fa fa-question-circle"></i>  Voir la page d'aide pour trouver et remplacer...                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="customJSTab" role="tabpanel" class="tab-pane">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <textarea id="customJS" placeholder="Entrez ou collez un JavaScript personnalisé"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-info">
+                    Afin de traiter le HTML avec JavaScript, veuillez utiliser le nom de variable 'html'. Exemples de code:<br/>
+                    Remplacer la première occurrence du mot "xxx" par le mot "yyy".: <b>html = html.replace("xxx","yyy");</b><br/>
+                    Remplacer tous les tags p par des tags span avec regexp: <b>html = html.replace(/&lt;p([^&lt;&gt;]*)&gt;(.*)&lt;\/p&gt;/g,"&lt;span$1&gt;$2&lt;/span&gt;");</b><br/>
+                    Supprimer toutes les balises p avec contenu interne avec regexp: <b>html = html.replace(/&lt;p[^&lt;&gt;]*&gt;(.*)&lt;\/p&gt;/g,"");</b><br/>
+                    Exemple avancé - faire correspondre le texte intérieur de toutes les balises et remplacer le début " par &lt;blockquote&gt; et la fin " par &lt;/blockquote&gt;: <br/>
+                    <b>html = html.replace(/&gt;([^&lt;&gt;]+)&lt;/gi, function(m, p1) { return "&gt;" + p1.replace(/([^&lt;&gt;"]*)"([^&lt;&gt;"]*)"/gi, '$1&lt;blockquote&gt;$2&lt;/blockquote&gt;') + "&lt;"; } );</b>
+                </p>
+                <p>
+                    <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp" target="_blank" class="pull-left text-info" rel="noopener"><i class="fa fa-question-circle"></i> Cliquez ici pour voir plus d'informations sur les fonctions de chaînes de caractères JavaScript...</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="tagAttributesTab" role="tabpanel" class="tab-pane">
+
+        <div class="tagAttributes optionRow">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <select id="tagAction"
+                                   onchange="js: var action = $('#tagAction option:selected').val();
+                                       if ( action === 'aa' )
+                                       { $('#enumerateAttrValueRow').fadeIn(); $('#attributeValue').fadeIn(); $('#tagAttribute').fadeIn(); }
+                                       else if ( action === 'ra' )
+                                       { $('#tagAttribute').fadeIn(); $('#enumerateAttrValueRow').fadeOut(); }
+                                       else if ( action === 're' || action === 'ue' )
+                                       { $('#attributeValue').fadeOut(); $('#tagAttribute').fadeOut(); $('#enumerateAttrValueRow').fadeOut(); }
+                                       else
+                                       { $('#tagAttributeEnumerate').prop('checked', false);
+                                         $('#enumerateAttrValueRow').fadeOut();
+                                         $('#tagAttribute').fadeOut();
+                                         $('#attributeValue').fadeIn(); }">
+                                <option value="">Sélectionnez une action</option>
+                                <option value="aa">Ajouter un attribut</option>
+                                <option value="ra">Supprimer l'attribut</option>
+                                <option value="ae">Ajouter aux éléments</option>
+                                <option value="pe">Pré ajouter aux éléments</option>
+                                <option value="re">Supprimer des éléments</option>
+                                <option value="we">Envelopper les Éléments</option>
+                                <option value="wie">Envelopper les éléments intérieurs</option>
+                                <option value="ue">Désenvelopper des éléments</option>
+                                <option value="repe">Remplacer des éléments</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="text" id="tag" class="fullWidthOneRow" placeholder="Entrez les sélecteurs ou balises HTML séparés par des virgules" title="Veuillez entrer les balises HTML comme div, p, span ou selector comme div.someClass ou * char pour sélectionner tous les éléments" />
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="text" id="tagAttribute" class="fullWidthOneRow" placeholder="Entrez l'attribut de la balise" />
+                        </div>
+                        <div class="col-lg-3">
+                            <div id="enumerateAttrValueRow" class="row" style="display: none">
+                                <div class="col-lg-8 text-right">
+                                    <input id="tagAttributeEnumerate" type="checkbox" onchange="js: if ( $(this).prop('checked') ) $('#startEnumerateFrom').fadeIn(); else $('#startEnumerateFrom').fadeOut();  ">
+                                    <label for="tagAttributeEnumerate" title="Cochez si vous voulez ajouter une énumération aux valeurs des attributs">Énumérer la valeur</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text" id="startEnumerateFrom" class="fullWidthOneRow" 
+                                           placeholder="Entrez commencez à énumérer de..." value="1" title="Commencer l'énumération à partir du numéro" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <textarea id="attributeValue" rows="1" class="fullWidthOneRow" placeholder="Entrez la valeur"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 noleftpadding">
+                    <button id="btnAddTagAttribute" class="btn btn-primary btn-block" onclick="addTagAttribute()">
+                        <i class="fa fa-plus"></i> Ajouter                    </button>
+                    <button id="btnUpdateTagAttribute" class="btn btn-nobg btn-block" onclick="updateTagAttribute()" style="display: none">
+                        <i class="fa fa-check"></i> Mise à jour                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                </div>                       
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10">
+                <select id="tagAttributesList" multiple ondblclick="editTagAttribute()">
+                </select>
+            </div>
+
+            <div class="col-lg-2 noleftpadding">
+                <button id="btnEditTagAttribute" class="btn btn-nobg btn-block" onclick="editTagAttribute()">
+                            <i class="fa fa-pencil"></i> Modifier                </button>
+                <button id="btnDeleteTagAttribute" class="btn btn-nobg btn-block" onclick="deleteTagAttribute()">
+                            <i class="fa fa-trash"></i> Supprimer                </button>
+                <button id="btnMoveUpTagAttribute" class="btn btn-nobg btn-block" onclick="upTagAttribute()">
+                            <i class="fa fa-arrow-up"></i> Déplacer vers le haut                </button>
+                <button id="btnMoveDownTagAttribute" class="btn btn-nobg btn-block" onclick="downTagAttribute()">
+                            <i class="fa fa-arrow-down"></i> Déplacer vers le bas                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <a class="text-info" href="https://wordtohtml.net/content/knowledge-base/manage-tags-attributes/" target="_blank"><i class="fa fa-question-circle"></i>  Voir la page d'aide pour la gestion des balises et des attributs...</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<hr/>
+
+<div id="templateAndCleanup" class="row">
+
+    <div id="templateRow" class="col-lg-12">
+
+        <div id="templateWrapper" class="dropdown pro">
+            <select id="template" class="form-control" name="template" onchange="js: loadTemplate(); ">
+<option value="0">Choisissez un modèle de nettoyage</option>
+</select>        </div>
+
+        <!-- Split button -->
+        <div class="btn-group saveButton dropup">
+          <button id="saveTemplateButton" type="button" class="btn btn-primary" title="Enregistrer toutes les options en ligne dans un modèle" data-toggle="tooltip"
+                  onclick="registerPopup('L'enregistrement des modèles est une fonctionnalité Pro', '/help/cleanup-templates.gif')">
+                    <i class="fa fa-floppy-o"></i> Enregistrer          </button>
+          <button id="templatesMenuButton" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Liste déroulante</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a id="newTemplateButton" href="javascript:void(0)" onclick="registerPopup()">Nouveau modèle</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a id="saveAsTemplateButton" href="javascript:void(0)" onclick="registerPopup()">Enregistrer sous</a></li>
+            <li><a id="renameTemplateButton" href="javascript:void(0)" onclick="registerPopup()">Renommer</a></li>
+            <li><a id="duplicateTemplateButton" href="javascript:void(0)" onclick="registerPopup()">Dupliquer</a></li>
+            <li><a id="reloadTemplateButton" href="javascript:void(0)" onclick="registerPopup()">Recharger</a></li>
+            <li><a id="shareTemplateMenuItem" href="javascript:void(0)" onclick="registerPopup()">Partager</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a id="deleteTemplateButton" href="javascript:void(0)" onclick="registerPopup()">Supprimer</a></li>
+          </ul>
+        </div>
+
+        <p class="pull-right top10"><em style="color: #aaa">Sélectionnez vos options puis cliquez sur le bouton vert "Nettoyer HTML".</em></p>
+
+    </div>
+
+</div>      
+
+</div>
+        
+
+    </div>    
+
+    <div id="uploadAndConvertWrapper" class="fluidPadding" style="">
+
+        <div id="uploadAndConvertCol" class="row">
+            <div id="uploadDocColumn" class="col-lg-12">
+            <form id="fileForm" name="fileForm" class="form-inline  pro">
+
+                <h3>
+                    Tu veux convertir un document Word ou PDF en HTML ?                </h3>
+
+                <div class="form-group">
+                    <input id="doc" name="doc" type="file" class="form-control-static" onchange="checkDocFileType()" style="display: none" />
+                    <label for="doc">
+                        <span id="convertButton" class="btn btn-primary" data-toggle="tooltip" title="Est compatible avec les fichiers PDF, Word, Open doc, RTF et texte"
+                              onclick="return registerPopup('Télécharger et convertir des documents en HTML est une fonctionnalité Pro','/help/upload-files.gif')">
+                            <i class="fa fa-file-word-o"></i> <i class="fa fa-file-pdf-o"></i> Charger un fichier et le convertir en HTML                        </span>
+                    </label>
+                    <div id="docConvertOptions">
+                        <div class="checkbox checkbox-slider--b-flat">
+                        <label for="embedImages" class="pro" data-toggle="tooltip" title="Intégrer les images dans le HTML (pas besoin d'avoir des fichiers d'images séparés). Cette option est utile pour les petites images, mais à utiliser avec prudence pour les grandes images. Les données de l'image seront incorporées dans votre code, et votre fichier HTML augmentera en taille et en complexité. Veuillez noter que l'option d'incorporation d'images ne peut pas être utilisée avec l'option HTML fixe.">
+                            <input id="embedImages" name="embedImages" type="checkbox" checked                                onchange="$(this).prop('checked', true); registerPopup();" />
+                            <span> Intégrer des images</span>
+                        </label>
+                        </div>
+                        <div class="checkbox checkbox-slider--b-flat">
+                        <label class="pro" data-toggle="tooltip" title="Vous créez des fichiers HTML autonomes ? Pas de problème, cette option ajoute les &lt;tête&gt; et &lt;corps&gt; au HTML, vous en aurez besoin pour que la page s'affiche correctement. Si vous collez dans un système basé sur le web comme Wordpress, Amazon, eBay etc. vous n'aurez pas besoin de cette option.">
+                            <input id="fullPageMode" name="fullPageMode" type="checkbox" 
+                                onclick="js: if ( $(this).prop('checked') ) trackEvent('Full page mode ON', 'click'); else  trackEvent('Full page mode OFF', 'click');" 
+                                onchange=""
+                                 /><span> Mode pleine page</span>
+                        </label>
+                        </div>
+                        <div class="checkbox checkbox-slider--b-flat">
+                        <label class="pro" data-toggle="tooltip" title="Si vous souhaitez que votre HTML ressemble exactement à votre document d'entrée, cochez cette option de HTML fixe, mais sachez que la mise en page fixe peut ne pas être parfaite sur les appareils mobiles. Elle est utile lorsqu'elle est utilisée comme page HTML autonome ou lorsqu'elle est affichée dans un &lt;iframe&gt;. Cette option active l'option Mode pleine page qui est nécessaire pour afficher correctement une page HTML fixe et désactive l'option d'incorporation d'images si elle est activée.">
+                            <input id="fixedHtml" name="fixedHtml" type="checkbox"
+                                onchange="$(this).prop('checked', false); registerPopup()" /><span> Correction HTML</span>
+                        </label>
+                        </div>
+                        <div class="checkbox checkbox-slider--b-flat" style="display: inline-block">
+                        <label for="autosaveConverterDoc" class="pro" data-toggle="tooltip" data-placement="bottom" title="Enregistrez automatiquement votre fichier HTML converti.">
+                            <input id="autosaveConverterDoc" name="autosaveConverterDoc" type="checkbox"  onchange="registerPopup(); $(this).prop('checked', false);" />
+                            <span><i class="fa fa-floppy-o"></i></span>
+                        </label>
+                    </div>                         
+                    </div>
+                </div>
+            </form>
+            </div>
+
+        </div>        
+    </div>
+
+</div>
+
+<div id="adsWrapper">
+
+    
+    <div id="homeWTHInfo" class="fluidPadding">
+
+            <div id="homeFeatures" class="row">
+                <div class="col-md-5">
+                    <h2>Go Pro à partir de €10                    </h3>
+                    <p>
+                        Nettoyez ou traitez votre HTML sans aucune restriction. Téléchargez vos documents Word (DOCX), PDF et autres et convertissez-les instantanément en HTML propre. Insérez des images avec le gestionnaire de fichiers. Dynamisez votre flux de travail en enregistrant vos options de nettoyage dans un modèle. Exportez votre HTML vers Word ou PDF. Créez des signatures de courriel et des logos.                    </p>
+
+                    <p>
+                        Obtenez des options supplémentaires dans l'éditeur visuel, comme plus de polices et un correcteur orthographique. Redimensionnez les fenêtres en fonction de vos besoins. Enregistrez et ouvrez vos fichiers à partir de n'importe quel navigateur.                    </p>
+
+                    <p id="tryProButton">
+                                                    <a href="javascript:void(0);" class="btn btn-lg btn-primary" onclick="registerPopup('Bouton inférieur Go Pro')">S'abonner à</a>
+                                            </p>
+
+                </div>
+
+                <div class="col-md-7">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Fonctionnalités de Word à HTML Pro :</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p><i class="fa fa-genderless"></i> Nettoyages HTML illimités</p>
+                            <p><i class="fa fa-genderless"></i> Convertir les documents Word, PDF et autres en HTML</p>
+                            <p><i class="fa fa-genderless"></i> OCR pour les PDF contenant du texte scanné</p>
+                            <p><i class="fa fa-genderless"></i> Enregistrez votre HTML en ligne</p>
+                            <p><i class="fa fa-genderless"></i> Enregistrez vos modèles de nettoyage</p>
+                            <p><i class="fa fa-genderless"></i> Recherches multiples et remplacement</p>
+                            <p><i class="fa fa-genderless"></i> Redimensionner les éditeurs ou passer en plein écran</p>
+                            <p><i class="fa fa-genderless"></i> Sauvegarde automatique du HTML édité</p>
+                            <p><i class="fa fa-genderless"></i> Télécharger le contenu édité en HTML, DOCX ou PDF</p>
+                        </div>
+
+                        <div class="col-md-5">
+                            <p><i class="fa fa-genderless"></i> Concevoir et tester des e-mails HTML</p>
+                            <p><i class="fa fa-genderless"></i> Modèles HTML (signatures de courriel)</p>
+                            <p><i class="fa fa-genderless"></i> Utiliser google ou d'autres polices de caractères web</p>
+                            <p><i class="fa fa-genderless"></i> Compresser ou indenter le HTML</p>
+                            <p><i class="fa fa-genderless"></i> Gestionnaire de fichiers d'images</p>
+                            <p><i class="fa fa-genderless"></i> Vérificateur d'orthographe</p>
+                            <p><i class="fa fa-genderless"></i> Thème de l'éditeur HTML foncé ou clair</p>
+                            <p><i class="fa fa-genderless"></i> Traitement JavaScript personnalisé</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+
+    
+</div>
+
+<hr/>
+
+<div class="row fluidPadding">    
+    <div class="col-md-12">
+
+        <h3 class="text-center">Nos utilisateurs adorent Word To HTML. Lis nos avis :</h3>
+
+        <!-- Begin widget code -->
+        <div data-rw-masonry="27686"></div>
+        <script>var script = document.createElement("script");script.type = "module";script.src = "https://widgets.thereviewsplace.com/2.0/rw-widget-masonry.js";document.getElementsByTagName("head")[0].appendChild(script);</script>
+        <!-- End widget code --> 
+
+    </div>
+</div>
+
+
+<div class="fluidPadding">    
+    <div id="homeInfo">
+        <h3>Word to HTML est le moyen le plus simple pour convertir instantan&eacute;ment votre texte ou vos documents en HTML5 propre en ligne. Vous pouvez utiliser notre outil pour nettoyer, transformer et r&eacute;duire la taille du HTML existant, et comme g&eacute;n&eacute;rateur de code HTML, outil de conversion Word en HTML ou &eacute;diteur de pages web.</h3><div class="panel-group" id="accordion"><div class="panel panel-default"><div class="panel-heading" id="headingOne"><h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapseOne">&nbsp;Comment convertir du texte en HTML ?&nbsp;</a></h4></div><div class="panel-collapse collapse in" id="collapseOne"><div class="panel-body"><ol><li>Collez le contenu de Microsoft Word ou Excel ou &eacute;crivez votre texte dans l&#39;&eacute;diteur visuel.</li><li>Votre texte sera instantan&eacute;ment converti en HTML propre. Vous pouvez conserver ou supprimer le formatage.</li><li>Votre HTML converti appara&icirc;tra dans l&#39;&eacute;diteur HTML.</li></ol><p>Vous pouvez &eacute;galement cr&eacute;er un nouveau contenu en tapant directement dans la fen&ecirc;tre de l&#39;&eacute;diteur visuel. Il fonctionne comme n&#39;importe quel &eacute;diteur de texte. Vous avez un contr&ocirc;le total sur les polices, la taille et les couleurs des polices, ainsi que la possibilit&eacute; de cr&eacute;er des listes, des tableaux et ins&eacute;rer des images.</p></div></div></div><div class="panel panel-default"><div class="panel-heading" id="headingTwo"><h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">&nbsp;Comment convertir un document MS Word en HTML ?&nbsp;</a></h4></div><div class="panel-collapse collapse" id="collapseTwo"><ol><li>Cliquez sur le bouton bleu T&eacute;l&eacute;charger fichier et s&eacute;lectionnez votre document</li><li>Votre fichier sera instantan&eacute;ment converti en HTML propre</li><li>Le texte de votre fichier sera affich&eacute; dans l&#39;&eacute;diteur visuel</li><li>Votre HTML converti appara&icirc;tra dans l&#39;&eacute;diteur HTML</li></ol><p>Word to HTML prend en charge les fichiers Word (.DOCX et .DOC), les fichiers PDF, les fichiers RTF (format de texte enrichi), les fichiers Open Doc (de Libre ou Open Office) et les fichiers de texte brut .TXT. Si votre document contient des images, des tableaux ou d&#39;autres contenus riches, ceux-ci seront &eacute;galement convertis en HTML pour vous.</p><p>Lorsque vous t&eacute;l&eacute;chargez un document, vous disposez de trois options suppl&eacute;mentaires :</p><ol><li><p><strong>Int&eacute;grer des images :</strong> Il s&#39;agit d&#39;une fonctionnalit&eacute; int&eacute;ressante qui permet d&#39;int&eacute;grer les images directement dans votre code HTML. Vous n&#39;avez pas besoin d&#39;avoir des fichiers d&#39;images s&eacute;par&eacute;s. Nous vous recommandons d&#39;essayer cette option car elle peut fonctionner pour les petites images, mais vous risquez de rencontrer des probl&egrave;mes avec les grandes images. La taille et la complexit&eacute; de vos fichiers HTML augmenteront &eacute;galement.</p></li><li><p><strong>Mode pleine page :</strong> Vous voulez cr&eacute;er des fichiers HTML autonomes ? Pas de probl&egrave;me, cette option ajoute le &lt;-t&ecirc;te&gt; et le &lt;corps&gt; au HTML. Vous en aurez besoin pour que la page s&#39;affiche correctement. Si vous collez dans un syst&egrave;me bas&eacute; sur le web comme Wordpress, Amazon, eBay etc. vous n&#39;aurez pas besoin de cette option.</p></li><li><p><strong>Correction du HTML :</strong> Si vous souhaitez que votre HTML ressemble exactement &agrave; votre document d&#39;entr&eacute;e, cochez cette option HTML fixe. Mais sachez que la mise en page fixe peut ne pas &ecirc;tre parfaite sur les appareils mobiles. Elle est utile lorsqu&#39;elle est utilis&eacute;e comme une page HTML autonome ou lorsqu&#39;elle est affich&eacute;e dans un &lt;iframe&gt;. Cette option active l&#39;option Mode pleine page qui est n&eacute;cessaire pour afficher correctement les pages HTML fixes. Elle d&eacute;sactive l&#39;option d&#39;incorporation d&#39;images si elle est activ&eacute;e.<br><br></p></li></ol></div></div></div><div class="panel panel-default"><div class="panel-heading" id="heading3"><h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">&nbsp;Comment nettoyer le HTML existant ?&nbsp;</a></h4></div><div class="panel-collapse collapse" id="collapseThree"><div class="panel-body"><p>La possibilit&eacute; de nettoyer le HTML existant est une fonction qui permet de gagner du temps. Par exemple, si vous modifiez une page dans Wordpress ou dans un autre syst&egrave;me de gestion de contenu, il peut &ecirc;tre utile de pouvoir supprimer le formatage dont vous n&#39;avez pas besoin.</p><p>Pour nettoyer votre HTML, il vous suffit de le coller dans la fen&ecirc;tre de l&#39;&eacute;diteur HTML sur le c&ocirc;t&eacute; droit. Lorsque vous collez le code, vous obtenez un aper&ccedil;u de son aspect dans l&#39;&eacute;diteur visuel de gauche. Vous pouvez ensuite modifier directement votre code HTML dans l&#39;&eacute;diteur HTML de droite ou utiliser l&#39;&eacute;diteur visuel de gauche pour effectuer vos modifications.</p><p>Pour nettoyer votre code HTML, vous pouvez utiliser les <strong>options</strong> de nettoyage du code HTML. Vous pouvez &eacute;galement ajouter, trouver et remplacer des commandes pour modifier votre code ; ou trouver et supprimer des commandes pour supprimer les codes dont vous n&#39;avez pas besoin. Une fois que toutes les options de nettoyage sont s&eacute;lectionn&eacute;es, cliquez sur le bouton vert<strong>&nbsp;Nettoyer mon</strong> HTML. Vous pouvez alors copier le code HTML converti dans le presse-papiers ou l&#39;enregistrer et le t&eacute;l&eacute;charger en tant que code HTML.</p><p>Si vous faites une erreur, vous pouvez cliquer sur le bouton Annuler sous l&#39;&eacute;diteur HTML pour annuler vos modifications - ceci est utile pour tester quelle combinaison de param&egrave;tres fonctionne le mieux.</p></div></div></div><div class="panel panel-default"><div class="panel-heading" id="heading4"><h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse4">&nbsp;Choix de la mise en page de l&#39;&eacute;diteur&nbsp;</a></h4></div><div class="panel-collapse collapse" id="collapse4"><div class="panel-body"><p>Au-dessus de l&#39;&eacute;diteur visuel se trouvent les options d&#39;affichage de l&#39;&eacute;diteur. En fonction de la taille de votre &eacute;cran et de vos pr&eacute;f&eacute;rences personnelles, vous pouvez choisir d&#39;afficher toutes les options de l&#39;&eacute;diteur visuel ou une version compacte des ic&ocirc;nes de l&#39;&eacute;diteur. Si vous choisissez la vue compacte, toutes les options sont toujours l&agrave;, il vous suffit de cliquer sur les ic&ocirc;nes avec les trois points pour voir les options suppl&eacute;mentaires.</p><p>Si vous cr&eacute;ez des descriptions Amazon, vous pouvez activer le mode de listing Amazon. Ceci vous permettra de vous assurer que vous n&#39;utilisez que du HTML compatible avec les descriptions Amazon.</p><p>Vous pouvez &eacute;galement choisir de rendre la fen&ecirc;tre de l&#39;&eacute;diteur visuel plus grande ou plus petite en cliquant sur les ic&ocirc;nes &lt; &gt; entre les deux fen&ecirc;tres.</p></div></div></div><div class="panel panel-default"><div class="panel-heading" id="heading5"><h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse5">&nbsp;Cr&eacute;ation et enregistrement de mod&egrave;les&nbsp;</a></h4></div><div class="panel-collapse collapse" id="collapse5"><div class="panel-body"><p>Lorsque vous avez trouv&eacute; une combinaison de param&egrave;tres qui vous convient le mieux, vous pouvez enregistrer ces param&egrave;tres dans un fichier mod&egrave;le. Cela signifie qu&#39;&agrave; l&#39;avenir, vous pourrez gagner du temps en s&eacute;lectionnant simplement votre mod&egrave;le et en l&#39;utilisant pour nettoyer votre fichier HTML. Le fichier mod&egrave;le enregistrera vos param&egrave;tres de nettoyage ainsi que toutes les commandes de recherche et de remplacement, la gestion des balises et des attributs ou le Javascript personnalis&eacute;.</p></div></div></div><div class="panel panel-default"><div class="panel-heading" id="heading6"><h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse6">&nbsp;Sauvegarde et exportation de vos documents&nbsp;</a></h4></div><div class="panel-collapse collapse" id="collapse6"><div class="panel-body"><p>Vous pouvez stocker de nombreux fichiers HTML en ligne. Pour enregistrer votre fichier actif, il suffit de cliquer sur le bouton bleu d&#39;enregistrement situ&eacute; sous l&#39;&eacute;diteur visuel.</p><p>Si vous cliquez sur la fl&egrave;che &agrave; droite de la bo&icirc;te de sauvegarde, vous obtiendrez un menu avec des options suppl&eacute;mentaires pour exporter votre fichier au format HTML, Word ou PDF.</p></div></div></div><div class="panel panel-default"><div class="panel-heading" id="heading7"><h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse7">&nbsp;Pr&eacute;visualisation de vos fichiers&nbsp;</a></h4></div><div class="panel-collapse collapse" id="collapse7"><div class="panel-body"><p>L&#39;&eacute;diteur visuel vous donnera une bonne id&eacute;e de l&#39;aspect de votre document. Mais pour voir exactement &agrave; quoi il ressemblera, vous pouvez pr&eacute;visualiser votre fichier. Les options de pr&eacute;visualisation se trouvent sous l&#39;&eacute;diteur visuel, &agrave; droite des boutons d&#39;enregistrement. Il y a trois options :</p><p><strong>Pr&eacute;visualisation de l&#39;e-mail :</strong> si vous travaillez sur un e-mail HTML, vous pouvez envoyer un aper&ccedil;u de l&#39;apparence du document &agrave; votre adresse e-mail.</p><p>Aper&ccedil;u<strong>g&eacute;n&eacute;ral :</strong> cela ouvrira un nouvel onglet du navigateur et vous montrera &agrave; quoi ressemble votre HTML.</p><p>Aper&ccedil;u<strong>r&eacute;actif :</strong> vous avez la possibilit&eacute; de voir &agrave; quoi ressemble votre HTML sur votre bureau, votre tablette et votre t&eacute;l&eacute;phone portable.</p></div></div></div>    </div>
+</div>
+
+
+    <div id="bottomInfo" class="row fluidPadding top50">
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-xs-2 text-right">
+                        <i class="fa fa-3x fa-windows" aria-hidden="true"></i>
+                </div> 
+                <div class="col-xs-10">
+                    <p class="goProLink">
+                        Convertisseur Windows Desktop                    </p>
+                    <p>
+                        <a href="javascript:void(0)" class="link" onclick="js: $('#dcpModal').modal('show'); trackEvent('DCP Popup', 'shown'); return false;">Convertissez vos fichiers par lots en 1 seul endroit</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-xs-2 text-right top5">
+                        <i class="fa fa-3x fa-cloud" aria-hidden="true"></i>
+                </div> 
+                <div class="col-xs-10">
+                    <p class="goProLink">
+                        Convertisseur Lot Web  + API Web                    </p>
+                    <p>
+                        <a href="javascript:void(0)" class="link" onclick="js: $('#dcpoModal').modal('show'); trackEvent('DCPO Popup', 'shown'); return false;">Conversion par lots depuis n'importe quel navigateur</a>
+                    </p>
+                </div>
+            </div>
+        </div> 
+        <div class="col-lg-4">
+            <div id="review" class="row">
+                <div class="col-xs-2 text-right">
+                        <i class="fa fa-3x fa-comment-o" aria-hidden="true"></i>
+                </div> 
+                <div class="col-xs-10">
+                    <p class="goProLink">
+                        Vous aimez Word to HTML ?                    </p>                        
+                    <p>
+                        <button data-rw-collect-modal='freshideas' onclick="js: trackEvent('Review Link', 'click');">Laissez-nous un petit commentaire</button>
+                    </p>
+                </div>
+            </div>
+        </div>               
+    </div>
+
+<div id="emojisPopup" style="display: none">
+    <emoji-picker></emoji-picker>
+</div>
+
+<div id="templateNameModal" class="modal fade templateNameModal" tabindex="-1" role="dialog" aria-labelledby="templateModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="templateModalLabel">Nom du modèle</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <input type="text" id="templateName" name="templateName" placeholder="Veuillez entrer le nom du modèle" maxlength="128" class="form-control" />
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <label id="shareWithTeamLabel" class="pull-left" style="display: none">
+            <input type="checkbox" id="shareWithTeam" name="shareWithTeam" /> Partagez ce modèle avec votre équipe        </label>
+        <button id="templateCloseModalButton" type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button id="templateSaveModalButton" type="button" class="btn btn-primary">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="docNameModal" class="modal fade docNameModal" tabindex="-1" role="dialog" aria-labelledby="docModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="docModalLabel">Nom du document</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <input type="text" id="docName" name="docName" placeholder="Veuillez entrer le nom du document" maxlength="128" class="form-control" />
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button id="docCloseModalButton" type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button id="docSaveModalButton" type="button" class="btn btn-primary">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="inputNameModal" class="modal fade inputNameModal" tabindex="-1" role="dialog" aria-labelledby="inputModalTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="inputModalTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <input type="text" id="inputName" name="inputName" placeholder="" maxlength="128" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="inputModalInfo" class="col-lg-12 infoText">
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button id="inputCloseModalButton" type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+        <button id="inputModalNextButton" type="button" class="btn btn-primary">Suivant</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal WTH Features -->
+<div id="modalWTHPro" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <div class="close" style="float: none; position: absolute; top: 10px; right: 10px; z-index: 10">
+                <a href="javascript:void(0)" onclick="js: $('#modalWTHPro').modal('hide')">&times;</a>
+            </div>
+
+            <div class="modal-body">
+
+                                            <h1 class="text-center">Inscrivez-vous pour accéder à toutes les fonctionnalités</h1>
+                    
+
+                <div class="row">                
+                    
+                    <div id="registrationSide" class="col-lg-4">
+
+                        <div id="socialButtons">
+                            <div id="w0">
+                                                            <div class="row">
+                                    <a class="btn btn-lg btn-block btn-social btn-google auth-link" href="/fr/site/auth?authclient=google" title="Google"><span class="fa fa-google"></span> Connectez-vous avec Google</a>                                </div>
+                                                            <div class="row">
+                                    <a class="btn btn-lg btn-block btn-social btn-facebook auth-link" href="/fr/site/auth?authclient=facebook" title="Facebook"><span class="fa fa-facebook"></span> Connectez-vous avec Facebook</a>                                </div>
+                            
+                            </div>                        </div>
+
+                        <div class="row top10">
+
+                            <h4>Ou inscrivez-vous avec votre adresse email :</h4>
+
+                            <div id="registerViaEmail">
+                                <form id="form-signup" action="/fr" method="post">
+<input type="hidden" name="_csrf" value="_HUZ8VMJslEe_1o4O5ojncEgh7JgLo5Tz_iWKVbuH26bLWykF0z4ZCnLbQtDzG_kj0736lJq5ACGgcJnDJ5XWQ==">
+                                <div class="form-group">
+                                    <div class="form-group field-registerform-email required">
+
+<input type="text" id="registerform-email" class="form-control" name="RegisterForm[email]" autocomplete="off" placeholder="Envoyez un courriel à" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>
+                                    <div class="form-group field-registerform-password required">
+
+<input type="password" id="registerform-password" class="form-control" name="RegisterForm[password]" autocomplete="new-password" placeholder="Mot de passe" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>                                </div>
+
+                                <div class="reg-name-field" style="display: none">
+                                    <div class="form-group field-registerform-name">
+
+<input type="text" id="registerform-name" class="form-control" name="RegisterForm[name]">
+
+<p class="help-block help-block-error"></p>
+</div>                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-lg btn-success btn-block" name="signup-button">S'abonner à...</button>                                </div>
+
+                                </form>                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="registerModalFeatures" class="col-lg-8">
+                        <div class="wthFeatures row">
+
+                            <div class="row">
+                                <div class="col-md-6 text-center featureBox">
+                                    <p><i class="fa fa-file-word-o fa-5x"></i> <i class="fa fa-file-pdf-o fa-5x"></i></p>
+                                    <b>Gagnez du temps.</b> Téléchargez et convertissez des fichiers Word, PDF et autres en HTML. Même le texte OCR des fichiers PDF.                                </div>
+                                <div class="col-md-6 text-center featureBox">
+                                    <p><i class="fa fa-cloud-upload fa-5x"></i></p>
+                                    <b>Travaillez plus intelligemment.</b> Stockez vos fichiers, modèles et paramètres en ligne. Travaillez à partir de n'importe quel navigateur.                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 text-center featureBox">
+                                    <p><i class="fa fa-rocket fa-5x"></i></p>
+                                    <b>Travaillez plus rapidement.</b> Recherche multiple et remplacement par des expressions régulières - plus de contrôle sur le nettoyage.                                </div>
+                                <div class="col-md-6 text-center featureBox">
+                                    <p><i class="fa fa-file-image-o fa-5x"></i></p>
+                                    <b>Plus de fonctionnalités.</b> Téléchargez vos propres images et fichiers. Intégrez vos images en tant que base64. Pas de publicité et plus encore...                                </div>
+                            </div>
+
+                        </div>
+                        <div id="featureImgWrapper" class="text-center">
+                            <h2 id="featureName">&nbsp;</h2>
+                            <img id="featureImg" src="data:," alt="feature" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div id="goProNotification" style="display: none">
+    <div id="goProNotificationClose"><a href="javascript: void(0);" onclick="$('#goProNotification').fadeOut();">X</a></div>
+    <h3>Merci d'avoir utilisé notre site</h3>
+    <p>
+        Pourquoi ne pas souscrire à Pro ? Vous pourriez apporter votre soutien à notre site et obtenir des fonctions supplémentaires intéressantes comme le téléchargement de fichiers et l'enregistrement de vos fichiers et modèles.        <a href="javascript: void(0);" onclick="registerPopup(); $('#goProNotification').fadeOut();"><b>Souscrire à Pro maintenant...</b></a>
+    </p>
+</div>
+<div id="guestGoProModal" class="modal fade guestGoPrModal" tabindex="-1" role="dialog" aria-labelledby="guestGoPrLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="guestGoPrLabel">De Word à HTML</h4>
+      </div>
+      <div class="modal-body text-center">
+
+        <h3 id="goProModalInfo"></h3>
+        <button id="goProModalButton" type="button" class="btn btn-lg btn-primary" onclick="trackEvent('Guest GO PRO modal button', 'click'); window.location = '/site/register'">Passez à PRO maintenant pour déverrouiller toutes les fonctionnalités...</button>
+
+      </div>
+      <div class="modal-footer">
+        <button id="closeGoProModalButton" type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sendEmailModal" class="modal fade sendEmailModal" tabindex="-1" role="dialog" aria-labelledby="sendEmailModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="sendEmailModalLabel">Envoyer un email test</h4>
+      </div>
+      <div class="modal-body">
+
+            
+            <p class="text-center link"><a href="/email/designer"><i class="fa fa-envelope" aria-hidden="true"></i> Découvrez notre nouvel outil de création d'e-mails...</a></p>
+                         
+
+
+          <p>Vous travaillez sur un e-mail HTML ? Vous pouvez envoyer un e-mail test pour voir à quoi il ressemblera. Vous pouvez modifier l'adresse de destination ci-dessous et ajouter un sujet.</p>
+
+        <div class="row well-sm">
+            <div class="col-lg-12">
+                <input type="text" id="sendToEmail" name="sendToEmail" placeholder="Veuillez entrer pour envoyer un email" maxlength="128" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row well-sm">
+            <div class="col-lg-12">
+                <input type="text" id="emailSubject" name="emailSubject" placeholder="Veuillez entrer le sujet de l'email" maxlength="250" class="form-control" />
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button id="sendEmailModalButton" type="button" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Envoyer un email</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="shareTemplateModal" class="modal fade shareTemplateModal" tabindex="-1" role="dialog" aria-labelledby="shareTemplateModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="shareTemplateModalLabel">Partager le modèle avec l'équipe...</h4>
+      </div>
+      <div class="modal-body">
+
+        <h3>Nom du modèle partagé : <span id="shareTemplateName">Template name...</span></h3>
+        
+        <h4>Partager avec :</h4>
+
+        <div class="row">
+            <div class="col-lg-6">
+              <a href="javascript:void(0)" onclick="js: if ( $(this).attr('data-val') == '1' ) { $('.templateTeamUser').prop('checked', true).change(); $(this).attr('data-val', 0); } else { $('.templateTeamUser').prop('checked', false).change(); $(this).attr('data-val', 1); } " 
+                data-val="1">Sélectionner/désélectionner tout</a>
+            </div>
+            <div class="col-lg-6">
+            <a href="javascript:void(0)" onclick="js: if ( $(this).attr('data-val') == '1' ) { $('.templateOverwrite').prop('checked', true); $(this).attr('data-val', 0); } else { $('.templateOverwrite').prop('checked', false); $(this).attr('data-val', 1); } " 
+                data-val="1">Sélectionner/désélectionner tout</a>
+            </div>
+        </div>
+
+                  <p>Vous n'avez pas d'utilisateurs de l'équipe ...</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button id="shareTemplateModalButton" type="button" class="btn btn-primary"><i class="fa fa-share-alt"></i> Partager</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="shareDocumentModal" class="modal fade shareDocumentModal" tabindex="-1" role="dialog" aria-labelledby="shareDocumentModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="shareDocumentModalLabel">Partage le document avec l'équipe...</h4>
+      </div>
+      <div class="modal-body">
+
+        <h3>Nom du document partagé : <span id="shareDocumentName">Document name...</span></h3>
+        
+        <h4>Partager avec :</h4>
+
+        <div class="row">
+            <div class="col-lg-6">
+              <a href="javascript:void(0)" onclick="js: if ( $(this).attr('data-val') == '1' ) { $('.documentTeamUser').prop('checked', true).change(); $(this).attr('data-val', 0); } else { $('.documentTeamUser').prop('checked', false).change(); $(this).attr('data-val', 1); } " 
+                data-val="1">Sélectionner/désélectionner tout</a>
+            </div>
+            <div class="col-lg-6">
+            <a href="javascript:void(0)" onclick="js: if ( $(this).attr('data-val') == '1' ) { $('.documentOverwrite').prop('checked', true); $(this).attr('data-val', 0); } else { $('.documentOverwrite').prop('checked', false); $(this).attr('data-val', 1); } " 
+                data-val="1">Sélectionner/désélectionner tout</a>
+            </div>
+        </div>
+
+                  <p>Vous n'avez pas d'utilisateurs de l'équipe ...</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button id="shareDocumentModalButton" type="button" class="btn btn-primary"><i class="fa fa-share-alt"></i> Partager</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="htmlTemplatesModal" class="modal fade htmlTemplatesModal" tabindex="-1" role="dialog" aria-labelledby="htmlTemplatesLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="htmlTemplatesLabel">Modèles HTML</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <select id="htmlTemplateList" class="form-control" onchange="previewHtmlTemplate($(this).val())">
+                    <option value="">Veuillez choisir un modèle</option>
+                    <option value="signature_simple.html">Signature - Simple</option>
+                    <option value="signature_logo_left.html">Signature - Logo à gauche</option>
+                    <option value="signature_logo_top.html">Signature - Logo Haut</option>
+                    <option value="newsletter.html">Lettre d'information</option>
+                    <option value="stationery.html">Papeterie</option>
+                    <option value="product.html">Annonce du produit</option>
+                    <option value="receipt.html">Reçu</option>
+                    <option value="cv.html">CV</option>
+                </select>
+            </div>
+        </div>
+
+        <hr/>
+
+        <h3>Aperçu du modèle</h3>
+
+        <iframe id="templatePreview" style="width: 100%; min-height: 400px"></iframe>
+
+      </div>
+      <div class="modal-footer">
+        <button id="htmlTemplateOKButton" type="button" class="btn btn-primary" disabled onclick="useTemplateInEditor()">Sélectionnez</button>
+        <button id="htmlTemplateCloseModalButton" type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="trialModal" class="modal fade trialModal" tabindex="-1" role="dialog" aria-labelledby="trialLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="trialLabel">Essai de Word à HTML</h4>
+      </div>
+      <div class="modal-body text-center">
+
+        <h2>Votre HTML a été copié dans le presse-papiers.</h2>
+        <h3>Veuillez noter qu'en mode d'essai, les mots aléatoires sont remplacés par des caractères *.</h3>
+        <h3><a href="/site/payment" class="link">Passez à PRO maintenant pour déverrouiller toutes les fonctionnalités...</a></h3>
+
+      </div>
+      <div class="modal-footer">
+        <button id="okTrialButton" type="button" class="btn btn-primary" onclick="trackEvent('GO PRO Trial modal', 'click'); window.location = '/site/payment'">GO PRO</button>
+        <button id="closeTrialModalButton" type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="deleteDocModal" class="modal fade deleteDocModal" tabindex="-1" role="dialog" aria-labelledby="deleteDocModalLabel">
+  <div class="modal-dialog" role="document" style="width: 50%">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="deleteDocModalLabel">Supprime le document</h4>
+      </div>
+      <div class="modal-body">
+        
+        <h4 class="text-center"><p>Ton document contient des fichiers multimédias (images, etc.) stockés sur WordToHTML.net.</p><p>Peux-tu confirmer si tu veux supprimer uniquement le document et conserver les fichiers multimédias ou supprimer les deux ? La suppression des fichiers multimédias est permanente.</p><p>Si tu fais référence à l'un de ces fichiers ailleurs (un site Web, un e-mail, etc.), ne supprime que le fichier HTML. Sache que tu peux aussi télécharger le document enregistré avec tous les fichiers multimédias avant de le supprimer.</p></h4>
+
+        <div class="row well-sm">
+            <div class="col-lg-6 text-center">
+              <button id="deleteDocOnlyButton" type="button" class="btn btn-primary" onclick="js: $('#deleteDocModal').modal('hide'); deleteSavedDoc(false);"><i class="fa fa-delete"></i> Supprime uniquement le fichier HTML</button>
+            </div>
+            <div class="col-lg-6 text-center">
+              <button id="deleteDocWithMediaButton" type="button" class="btn btn-danger" onclick="js: $('#deleteDocModal').modal('hide'); deleteSavedDoc(true);"><i class="fa fa-delete"></i> Supprime les fichiers HTML et médias</button>
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="pageDefaultsModal" class="modal fade pageDefaultsModal" tabindex="-1" role="dialog" aria-labelledby="pageDefaultsModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="pageDefaultsModalLabel">Options de style par défaut de la page</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Couleur de fond            </div>            
+            <div class="col-lg-9">
+                <input type="text" id="bgColor" name="bgColor" value="#ffffff" placeholder="Entrez ou choisissez une couleur"/> 
+                <input type="color" id="bgColorPicker" name="bgColorPicker" value="#ffffff" onchange="$('#bgColor').val($(this).val())"/>
+            </div>            
+        </div>
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Couleur de la police            </div>            
+            <div class="col-lg-9">
+                <input type="text" id="fontColor" name="fontColor" value="#000000" placeholder="Entrez ou choisissez une couleur"/> 
+                <input type="color" id="fontColorPicker" name="fontColorPicker" value="#000000" onchange="$('#fontColor').val($(this).val())"/>
+            </div>
+        </div>
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Famille de polices            </div>            
+            <div class="col-lg-9">          
+                <input type="text" id="fontFamily" name="fontFamily" placeholder="Entrez ou choisissez une famille de polices"/>  
+                <select id="fontFamilySelect" onchange="$('#fontFamily').val($(this).val())"></select>
+            </div>
+        </div>        
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Taille de la police            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="fontSize" name="fontSize" placeholder="Entrez ou choisissez la taille de la police"/>  
+                <select id="fontSizeSelect" onchange="$('#fontSize').val($(this).val())"></select>
+            </div>
+        </div>        
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Padding de pages            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="pagePadding" name="pagePadding" placeholder="Entrez le padding de la page" title="Par exemple, entrez 50px ou 20px 30px 40px 50px"/>  
+            </div>
+        </div>        
+        
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Marge de la page            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="pageMargin" name="pageMargin" placeholder="Entrez la marge de la page" title="Par exemple, entrez 50px ou 20px 30px 40px 50px"/>  
+            </div>
+        </div>    
+        
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Largeur de la page            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="pageWidth" name="pageWidth" placeholder="Entrez la largeur de la page" title="Par exemple, entrez 1000px ou 50%."/>  
+            </div>
+        </div>          
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button id="pageDefaultsModalButton" type="button" class="btn btn-primary" onclick="setPageStyleDefaultsInHtml()">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="tableOptionsModal" class="modal fade tableOptionsModal" tabindex="-1" role="dialog" aria-labelledby="tableOptionsModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="tableOptionsModalLabel">Style du tableau</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Couleur de fond            </div>            
+            <div class="col-lg-9">
+                <input type="text" id="tableBgColor" name="tableBgColor" value="" placeholder="Entrez ou choisissez la couleur de fond du tableau"/> 
+                <input type="color" id="tableBgColorPicker" name="tableBgColorPicker" value="#ffffff" onchange="$('#tableBgColor').val($(this).val())"/>
+            </div>            
+        </div>
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Couleur de la police            </div>            
+            <div class="col-lg-9">
+                <input type="text" id="tableFontColor" name="tableFontColor" value="" placeholder="Entrez ou choisissez la couleur de la police du tableau"/> 
+                <input type="color" id="tableFontColorPicker" name="tableFontColorPicker" value="#000000" onchange="$('#tableFontColor').val($(this).val())"/>
+            </div>
+        </div>
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Famille de polices            </div>            
+            <div class="col-lg-9">          
+                <input type="text" id="tableFontFamily" name="tableFontFamily" placeholder="Entrez ou choisissez la famille de polices du tableau"/>  
+                <select id="tableFontFamilySelect" onchange="$('#tableFontFamily').val($(this).val())"></select>
+            </div>
+        </div>        
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Taille de la police            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="tableFontSize" name="tableFontSize" placeholder="Entrez ou choisissez la taille de la police du tableau"/>  
+                <select id="tableFontSizeSelect" onchange="$('#tableFontSize').val($(this).val())"></select>
+            </div>
+        </div> 
+        
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Padding des cellules            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="cellPadding" name="cellPadding" placeholder="Entrez le padding des cellules du tableau" title="Par exemple, entrez 5px ou 10px 5px"/>  
+            </div>
+        </div>    
+        
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Espacement des cellules            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="cellSpacing" name="cellSpacing" placeholder="Entrez l'espacement des cellules du tableau" title="Par exemple, entrez 5px"/>  
+            </div>
+        </div>            
+                
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Largeur du tableau            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="tableWidth" name="tableWidth" placeholder="Entrez la largeur du tableau" title="Par exemple, entrez 1000px ou 50%."/>
+                <input type="checkbox" id="tableCenter" name="tableCenter" title="Cochez le tableau du centre (la largeur du tableau doit être inférieure à 100%)"/>
+                <label for="tableCenter">Tableau central</label>
+            </div>
+        </div>         
+        
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Hauteur du tableau            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="tableHeight" name="tableHeight" placeholder="Entrez la hauteur du tableau" title="Par exemple, entrez 1000px"/>  
+            </div>
+        </div>     
+        
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Largeur de la bordure            </div>            
+            <div class="col-lg-9">                 
+                <input type="text" id="tableBorderWidth" name="tableBorderWidth" placeholder="Entrez ou choisissez la largeur de la bordure du tableau" title="Par exemple, entrez 1px ou 1pt"/>  
+                <select id="tableBorderWidthSelect" onchange="$('#tableBorderWidth').val($(this).val())">
+                    <option value="">Veuillez choisir</option>
+                    <option value="1px">1px</option>
+                    <option value="2px">2px</option>
+                    <option value="3px">3px</option>
+                    <option value="4px">4px</option>
+                    <option value="5px">5px</option>
+                    <option value="6px">6px</option>
+                    <option value="7px">7px</option>
+                    <option value="8px">8px</option>
+                    <option value="9px">9px</option>
+                    <option value="10px">10px</option>
+                </select>                    
+            </div>
+        </div>   
+        
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Couleur de la bordure            </div>            
+            <div class="col-lg-9">
+                <input type="text" id="tableBorderColor" name="tableBorderColor" value="" placeholder="Entrez ou choisissez la couleur de la bordure du tableau"/> 
+                <input type="color" id="tableBorderColorPicker" name="tableBorderColorPicker" value="#000000" onchange="$('#tableBorderColor').val($(this).val())"/>
+            </div>
+        </div>        
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Style de bordure            </div>            
+            <div class="col-lg-9">
+                <select id="tableBorderStyleSelect"  onchange="if ( $(this).val() == '') { $('#tableBorderWidth').val(''); $('#tableBorderColor').val(''); } ">
+                    <option value="">Veuillez choisir</option>
+                    <option value="solid">solid</option>
+                    <option value="dotted">dotted</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                    <option value="none">none</option>
+                </select>
+            </div>
+        </div>          
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button id="tableOptionsModalButton" type="button" class="btn btn-primary" onclick="setTableOptionsInHtml()">OK</button>
+      </div>
+    </div>
+  </div>
+</div><div id="tableCellOptionsModal" class="modal fade tableCellOptionsModal" tabindex="-1" role="dialog" aria-labelledby="tableCellOptionsModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="tableCellOptionsModalLabel">Stylisation des cellules du tableau</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Padding des cellules            </div>            
+            <div class="col-lg-9">  
+                <input type="text" id="tableCellPadding" name="tableCellPadding" placeholder="Entrez le padding des cellules du tableau" title="Par exemple, entrez 5px ou 10px 5px"/>  
+                <select id="tableCellPaddingWidthSelect" onchange="$('#tableCellPadding').val($(this).val())">
+                    <option value="">Veuillez choisir</option>
+                    <option value="5px">5px</option>
+                    <option value="10px">10px</option>
+                    <option value="20px">20px</option>
+                    <option value="30px">30px</option>
+                    <option value="5px 20px">5px 20px</option>
+                    <option value="10px 40px">10px 40px</option>
+                </select>                   
+            </div>
+        </div>        
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Couleur de fond            </div>            
+            <div class="col-lg-9">
+                <input type="text" id="tableCellBgColor" name="tableCellBgColor" value="" placeholder="Entrez ou choisissez la couleur de fond des cellules du tableau"/> 
+                <input type="color" id="tableCellBgColorPicker" name="tableCellBgColorPicker" value="#ffffff" onchange="$('#tableCellBgColor').val($(this).val())"/>
+            </div>            
+        </div>      
+        
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Largeur de la bordure            </div>            
+            <div class="col-lg-9">                 
+                <input type="text" id="tableCellBorderWidth" name="tableCellBorderWidth" placeholder="Entrez ou choisissez la largeur de la bordure de la cellule du tableau" title="Par exemple, entrez 1px ou 1pt"/>  
+                <select id="tableCellBorderWidthSelect" onchange="$('#tableCellBorderWidth').val($(this).val())">
+                    <option value="">Veuillez choisir</option>
+                    <option value="1px">1px</option>
+                    <option value="2px">2px</option>
+                    <option value="3px">3px</option>
+                    <option value="4px">4px</option>
+                    <option value="5px">5px</option>
+                    <option value="6px">6px</option>
+                    <option value="7px">7px</option>
+                    <option value="8px">8px</option>
+                    <option value="9px">9px</option>
+                    <option value="10px">10px</option>
+                </select>                    
+            </div>
+        </div>   
+        
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Couleur de la bordure            </div>            
+            <div class="col-lg-9">
+                <input type="text" id="tableCellBorderColor" name="tableCellBorderColor" value="" placeholder="Entrez ou choisissez la couleur de la bordure de la cellule du tableau"/> 
+                <input type="color" id="tableCellBorderColorPicker" name="tableCellBorderColorPicker" value="#000000" onchange="$('#tableCellBorderColor').val($(this).val())"/>
+            </div>
+        </div>        
+
+        <div class="row well-sm">
+            <div class="col-lg-3">
+                Style de bordure            </div>            
+            <div class="col-lg-9">
+                <select id="tableCellBorderStyleSelect" onchange="if ( $(this).val() == '') { $('#tableCellBorderWidth').val(''); $('#tableCellBorderColor').val(''); } ">
+                    <option value="">Veuillez choisir</option>
+                    <option value="solid">solid</option>
+                    <option value="dotted">dotted</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                    <option value="none">none</option>
+                </select>
+            </div>
+        </div>          
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button id="tableCellOptionsModalButton" type="button" class="btn btn-primary" onclick="setTableCellOptionsInHtml()">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="textShadowModal" class="modal fade textShadowModal" tabindex="-1" role="dialog" aria-labelledby="textShadowModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="textShadowModalLabel">Ombre du texte</h4>
+      </div>
+      <div class="modal-body">
+
+        <div id="textShadowWell" class="row well-lg">
+            <div class="col-lg-12 text-center" id="textShadowPreview" style="text-shadow: 3px 2px 2px rgba(136,136,136,0.8)">Prévisualisation de l'ombre du texte</div>
+        </div>
+
+        <div class="row well-sm">
+            <div class="col-lg-3 col-lg-offset-2">
+                Position horizontale            </div>            
+            <div class="col-lg-6">    
+                <input type="text" id="textShadowRight" class="form-control" name="textShadowRight" value="3" data-krajee-slider="slider_81d74f9b">            </div>
+        </div>      
+        
+        <div class="row well-sm">
+            <div class="col-lg-3 col-lg-offset-2">
+                Position verticale            </div>            
+            <div class="col-lg-6">    
+                <input type="text" id="textShadowDown" class="form-control" name="textShadowDown" value="3" data-krajee-slider="slider_396210aa">            </div>
+        </div>   
+        
+        <div class="row well-sm">
+            <div class="col-lg-3 col-lg-offset-2">
+                Flou            </div>            
+            <div class="col-lg-6">    
+                <input type="text" id="textShadowBlur" class="form-control" name="textShadowBlur" value="2" data-krajee-slider="slider_917ed298">            </div>
+        </div>    
+        
+        <div class="row well-sm">
+            <div class="col-lg-3 col-lg-offset-2">
+                Opacité            </div>            
+            <div class="col-lg-6">    
+                <input type="text" id="textShadowOpacity" class="form-control" name="textShadowOpacity" value="0.8" data-krajee-slider="slider_b3e59206">            </div>
+        </div>    
+        
+        <div class="row well-sm">
+            <div class="col-lg-3 col-lg-offset-2">
+                Couleur            </div>            
+            <div class="col-lg-6">    
+                <input type="color" id="textShadowColorPicker" name="textShadowColorPicker" value="#888888" onchange="updateTextShadowPreview()"/>
+            </div>
+        </div>         
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button id="textShadowModalButton" type="button" class="btn btn-primary" onclick="setTextShadowInHtml()">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="dcpModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <a href="https://documentconverter.pro" target="_blank" rel="noopener">
+          <img data-src="https://wordtohtml.r.worldssl.net/images/docconverter-pro-logo.png" src="data:," class="lazyload" loading="lazy" width="300" height="45" alt="Doc Converter Pro - application de conversion de documents de bureau Windows" />
+        </a>
+      </div>
+      <div class="modal-body">
+
+          <div class="row well-sm">
+            <div class="dcpInfo col-md-6">
+
+              <h1>Conversion en masse de vos documents sur Windows</h1><p>Word To HTML est parfait pour cr&eacute;er ou convertir des fichiers individuels, mais pour la conversion en masse de documents, vous avez besoin de notre produit d&eacute;riv&eacute; Doc Converter Pro.</p><p>Vous pouvez convertir par lots autant de fichiers que vous le souhaitez et comme vous convertissez en fichier local, ceci est beaucoup plus rapide. En outre, comme les donn&eacute;es ne quittent jamais votre syst&egrave;me, c&#39;est une option plus s&ucirc;re pour les documents confidentiels.</p><p>Vous pouvez convertir Word en HTML, Word en PDF, PDF en HTML et plus encore. Cr&eacute;ez des mod&egrave;les de conversion personnalis&eacute;s pour r&eacute;pondre &agrave; vos besoins. Vous avez un contr&ocirc;le total sur les images, le CSS, la recherche et le remplacement/suppression et plus encore. Vous pouvez m&ecirc;me partager vos mod&egrave;les avec vos coll&egrave;gues.</p>
+           </div>
+           <div class="col-md-6 text-center">
+                <img data-src="https://wordtohtml.r.worldssl.net/images/dcp-mainscreen-narrow.png" src="data:," class="lazyload" loading="lazy" width="370" height="218" alt="Fenêtre principale de Doc Converter Pro" />
+            </div>                       
+          </div>
+
+          <div class="row well-sm text-center">
+            <div class="col-md-12">
+
+                <p class="text-center">
+                    <a href="https://documentconverter.pro/batch-convert-pdf-word-html/" target="_blank" class="btn btn-lg btn-danger"  rel="noopener"
+                       onclick="js: trackEvent('DCP Find Out Button', 'click');">Essayez notre application Doc Converter Pro Desktop</a>
+                </p>
+
+           </div>
+          </div>          
+
+      </div>
+
+    </div>
+  </div>
+</div><div id="dcpoModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <a href="https://docconverter.pro" target="_blank" rel="noopener">
+          <img data-src="https://wordtohtml.r.worldssl.net/images/docconverter-pro-logo.png" src="data:," class="lazyload" loading="lazy" width="300" height="45" alt="Doc Converter Pro online : application web de conversion de documents en ligne" />
+        </a>
+      </div>
+      <div class="modal-body">
+
+          <div class="row well-sm">
+            <div class="dcpInfo col-md-6">
+
+              <h1>Convertissez en masse vos documents &agrave; partir de n&#39;importe quel navigateur</h1><p>Word To HTML est excellent pour cr&eacute;er ou convertir des fichiers individuels, mais pour convertir des documents en masse, vous avez besoin de notre produit d&eacute;riv&eacute; Doc Converter Pro webapp.</p><p>Vous pouvez convertir Word en HTML, Word en PDF, PDF en HTML et plus encore. Cr&eacute;ez des mod&egrave;les de conversion personnalis&eacute;s pour r&eacute;pondre &agrave; vos besoins. Vous avez un contr&ocirc;le total sur les images, le CSS, la recherche et le remplacement/suppression et plus encore. Vous pouvez m&ecirc;me partager vos mod&egrave;les avec vos coll&egrave;gues.</p><p>Tout est bas&eacute; sur le Web, vous avez donc la facilit&eacute; et l&#39;avantage de pouvoir convertir &agrave; partir de n&#39;importe quel navigateur. Le fait d&#39;&ecirc;tre bas&eacute; sur le Web en fait &eacute;galement le choix id&eacute;al pour les &eacute;quipes.</p><p>Les d&eacute;veloppeurs peuvent utiliser notre API Web Rest pour int&eacute;grer notre pouvoir de conversion dans votre propre application.</p>
+           </div>
+           <div class="col-md-6 text-center">
+              <img data-src="https://wordtohtml.r.worldssl.net/images/dcpo_dashboard.jpg" alt="Doc Converter Pro online" src="data:," class="lazyload" loading="lazy" width="370" height="260" />
+            </div>                       
+          </div>
+
+          <div class="row well-sm text-center">
+            <div class="col-md-12">
+
+              <p class="text-center">
+                    <a href="https://docconverter.pro" target="_blank" class="btn btn-lg btn-danger"  rel="noopener"
+                       onclick="js: trackEvent('DCPO Find Out Button', 'click');">Essayez notre application Web Doc Converter Pro</a>
+              </p>
+
+           </div>
+          </div>          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            &copy; Freshideas.ie 2016 - 2022 | 
+            <a href="/site/terms">Conditions générales de vente</a> | 
+            <a href="/site/privacy">Politique de confidentialité</a> &nbsp;&nbsp;&nbsp; 
+            <a href="https://www.facebook.com/wordtohtml/" target="_blank" rel="noreferrer" style="color: #4267b2; font-size: 1.3em"><i class="fa fa-lg fa-facebook-official" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/froala-editor@4.0.10/js/froala_editor.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/froala-editor@4.0.10/js/languages/pl.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/froala-editor@4.0.10/js/languages/es.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/froala-editor@4.0.10/js/languages/it.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/froala-editor@4.0.10/js/languages/de.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/froala-editor@4.0.10/js/languages/fr.js"></script>
+<script src="/js/emojis.js?v=1599107781"></script>
+<script src="/js/codemirror560/lib/codemirror.min.js?v=1618467706"></script>
+<script src="/js/codemirror560/mode/htmlmixed/htmlmixed.js?v=1616242348"></script>
+<script src="/js/codemirror560/mode/xml/xml.js?v=1616242348"></script>
+<script src="/js/codemirror560/mode/javascript/javascript.js?v=1616242348"></script>
+<script src="/js/codemirror560/mode/css/css.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/display/fullscreen.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/search/search.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/search/searchcursor.js?v=1582893238"></script>
+<script src="/js/codemirror560/addon/search/jump-to-line.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/search/matchesonscrollbar.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/scroll/annotatescrollbar.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/edit/closetag.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/edit/matchbrackets.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/edit/matchtags.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/fold/foldcode.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/fold/foldgutter.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/fold/brace-fold.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/fold/xml-fold.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/fold/markdown-fold.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/fold/comment-fold.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/hint/show-hint.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/hint/html-hint.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/hint/xml-hint.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/hint/javascript-hint.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/hint/css-hint.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/dialog/dialog.js?v=1616242348"></script>
+<script src="/js/codemirror560/addon/display/placeholder.js?v=1616242348"></script>
+<script src="/js/show-invisibles.js?v=1476978610"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.10.3/beautify-css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.10.3/beautify-html.min.js"></script>
+<script src="/assets/91674c60/fr.js?v=1649956445"></script>
+<script src="/assets/958ca013/javascripts/md5.js?v=1645530266"></script>
+<script src="/assets/958ca013/javascripts/lajax.js?v=1645530266"></script>
+<script src="/assets/2cfa52d/jquery.min.js?v=1645530267"></script>
+<script src="/assets/68c47948/yii.js?v=1645530267"></script>
+<script src="/assets/2c28f596/js/select2.full.min.js?v=1645530267"></script>
+<script src="/assets/2c28f596/js/i18n/fr.js?v=1645530267"></script>
+<script src="/assets/3c4bf0e3/js/select2-krajee.min.js?v=1645530267"></script>
+<script src="/assets/94f2e17/js/kv-widgets.min.js?v=1645530267"></script>
+<script src="/js/iguider/jquery.iGuider.min.js?v=1591107760"></script>
+<script src="/js/iguider/themes/material/iGuider-theme-material.js?v=1544060862"></script>
+<script src="/js/iguider/iGuider.min.js?v=1647867046"></script>
+<script src="/js/common.min.js?1647866816"></script>
+<script src="/js/main.min.js?1647866843"></script>
+<script src="/js/ajax.min.js?1523529874"></script>
+<script src="/assets/68c47948/yii.validation.js?v=1645530267"></script>
+<script src="/assets/bf92f2b/js/strength-meter.min.js?v=1645530267"></script>
+<script src="/assets/bf92f2b/js/locales/strength-meter-fr.js?v=1645530267"></script>
+<script src="/assets/9246b0b7/js/strength-validation.min.js?v=1645530267"></script>
+<script src="/assets/68c47948/yii.activeForm.js?v=1645530267"></script>
+<script src="/assets/ce772b08/js/bootstrap-slider.min.js?v=1645530267"></script>
+<script src="/js/bootstrap-notify.min.js?v=1533647869"></script>
+<script src="/assets/c4701eb0/js/bootstrap.min.js?v=1645530267"></script>
+<script>jQuery(function ($) {
+jQuery&&jQuery.pjax&&(jQuery.pjax.defaults.maxCacheLength=0);
+if (jQuery('#document').data('select2')) { jQuery('#document').select2('destroy'); }
+jQuery.when(jQuery('#document').select2(select2_8e0bee46)).done(initS2Loading('document','s2options_d6851687'));
+jQuery('#document').on('change', function() { loadDocument(); });
+
+$('[data-toggle="tooltip"]').tooltip({delay: { "show": 750, "hide": 100 }, trigger: "hover", html: false});
+
+$('[data-toggle="tooltip"]').on("click", function () {
+    $(this).tooltip("hide");
+});
+
+$(".alert-success").fadeTo(10000, 500).slideUp(500, function(){
+    $(".alert-success").slideUp(500);
+});
+$(".alert-warning").fadeTo(10000, 500).slideUp(500, function(){
+    $(".alert-warning").slideUp(500);
+});
+if (jQuery('#registerform-password').data('strength')) { jQuery('#registerform-password').strength('destroy'); }
+jQuery('#registerform-password').strength(strength_40879144);
+
+jQuery('#form-signup').yiiActiveForm([{"id":"registerform-email","name":"email","container":".field-registerform-email","input":"#registerform-email","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.required(value, messages, {"message":"Email ne peut être vide."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Email n\u0027est pas une adresse email valide.","enableIDN":false,"skipOnEmpty":1});yii.validation.string(value, messages, {"message":"Email doit être au format texte.","max":255,"tooLong":"Email doit comporter au plus 255 caractères.","skipOnEmpty":1});}},{"id":"registerform-password","name":"password","container":".field-registerform-password","input":"#registerform-password","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password ne peut être vide."});kvStrengthValidator.validate(value, messages, {"strError":"Password doit être une chaîne","userField":"#registerform-email","min":6,"minError":"Password devrait contenir au moins 6 caractères! ({found} trouvé)!","allowSpaces":false,"allowSpacesError":"Password ne peut pas contenir d&#039;espaces","hasUser":false,"hasUserError":"Password ne peut pas contenir le nom d&#039;utilisateur","hasEmail":false,"hasEmailError":"Password ne peut pas contenir l&#039;adresse e-mail","lower":1,"lowerError":"Password 1 doit contenir au moins caractères minuscules! ({found} trouvé)!","upper":0,"upperError":"Password 0 doit contenir au moins caractères majuscules! ({found} trouvé)!","digit":1,"digitError":"Password 1 doit contenir au moins caractères numérique / chiffres! ({found} trouvé)!","special":0,"specialError":"Password 0 doit contenir au moins caractères spéciaux ({found} trouvé)!","haveIBeenPwned":false,"haveIBeenPwnedError":"Password is present in compromised password list"});}},{"id":"registerform-name","name":"name","container":".field-registerform-name","input":"#registerform-name","error":".help-block.help-block-error","enableAjaxValidation":true}], []);
+if (jQuery('#textShadowRight').data('slider')) { jQuery('#textShadowRight').slider('destroy'); }
+jQuery('#textShadowRight').slider(slider_81d74f9b);
+jQuery('#textShadowRight').on('slide', function() { updateTextShadowPreview() });
+
+$('#textShadowRight').on('slideStop', function(){$('#textShadowRight').trigger('change')});
+if (jQuery('#textShadowDown').data('slider')) { jQuery('#textShadowDown').slider('destroy'); }
+jQuery('#textShadowDown').slider(slider_396210aa);
+jQuery('#textShadowDown').on('slide', function() { updateTextShadowPreview() });
+
+$('#textShadowDown').on('slideStop', function(){$('#textShadowDown').trigger('change')});
+if (jQuery('#textShadowBlur').data('slider')) { jQuery('#textShadowBlur').slider('destroy'); }
+jQuery('#textShadowBlur').slider(slider_917ed298);
+jQuery('#textShadowBlur').on('slide', function() { updateTextShadowPreview() });
+
+$('#textShadowBlur').on('slideStop', function(){$('#textShadowBlur').trigger('change')});
+if (jQuery('#textShadowOpacity').data('slider')) { jQuery('#textShadowOpacity').slider('destroy'); }
+jQuery('#textShadowOpacity').slider(slider_b3e59206);
+jQuery('#textShadowOpacity').on('slide', function() { updateTextShadowPreview() });
+
+$('#textShadowOpacity').on('slideStop', function(){$('#textShadowOpacity').trigger('change')});
+});</script>
+<div id="alertModal" class="modal fade alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="alertModalTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+
+            <h3 id="alertModalInfo" class="alertText text-center"></h3>
+
+      </div>
+      <div class="modal-footer">
+        <button id="alertModalOK" type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="confirmModal" class="modal fade confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="confirmModalTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+
+            <h3 id="confirmModalInfo" class="confirmText text-center"></h3>
+
+      </div>
+      <div class="modal-footer">
+        <button id="confirmModalYes" type="button" class="btn btn-success">OUI</button> 
+        &nbsp;
+        <button id="confirmModalNo" type="button" class="btn btn-default">NON</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+        img.src = img.dataset.src;
+        });
+    } else {
+        // Dynamically import the LazySizes library
+        const script = document.createElement('script');
+        script.src =
+        'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
+        document.body.appendChild(script);
+    }
+</script>  
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6fbe13673b1aeda3","version":"2021.12.0","r":1,"token":"4581d6a58cf94e929fad52deda295622","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
